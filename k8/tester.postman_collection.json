@@ -1,0 +1,317 @@
+{
+	"info": {
+		"_postman_id": "aec90458-00c7-4e29-bf2e-7e817368b465",
+		"name": "tester",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "save 1 itinerary",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"departureCity\": \"Paris\",\n    \"arrivalCity\": \"Bangkok\",\n    \"date\": \"2019-03-16T13:56:39.492\",\n    \"cabin\": \"eco\",\n    \"payload\": \"payload\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:30080/itinerary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30080",
+					"path": [
+						"itinerary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find 1 itinerary",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "Paris|Bangkok|2019-03-16T13:56:39.492|eco",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:30080/find/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30080",
+					"path": [
+						"find",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save 2 itineraries",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"departureCity\": \"Paris\",\n        \"arrivalCity\": \"Bangkok\",\n        \"date\": \"2019-03-16T13:56:39.492\",\n        \"cabin\": \"ecoplus\",\n        \"payload\": \"payload3\"\n    },\n    {\n        \"departureCity\": \"Paris\",\n        \"arrivalCity\": \"Bangkok\",\n        \"date\": \"2019-03-16T13:57:39.492\",\n        \"cabin\": \"premium\",\n        \"payload\": \"payload2\"\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:30080/itineraries",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30080",
+					"path": [
+						"itineraries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save 2 itineraries with pipelining, Redisson only",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"departureCity\": \"Paris\",\n        \"arrivalCity\": \"Bangkok\",\n        \"date\": \"2019-03-17T13:56:39.492\",\n        \"cabin\": \"ecoplus\",\n        \"payload\": \"payload_pipeline1\"\n    },\n    {\n        \"departureCity\": \"Paris\",\n        \"arrivalCity\": \"Bangkok\",\n        \"date\": \"2019-03-17T13:57:39.492\",\n        \"cabin\": \"premium\",\n        \"payload\": \"payload_pipeline2\"\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:30080/itineraries/pipeline",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30080",
+					"path": [
+						"itineraries",
+						"pipeline"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find all itineraries",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    \"Paris|Bangkok|2019-03-16T13:56:39.492|eco\",\n    \"Paris|Bangkok|2019-03-16T13:57:39.492|premium\",\n    \"Paris|Bangkok|2019-03-16T13:56:39.492|ecoplus\",\n    \"Paris|Bangkok|2019-03-17T13:56:39.492|ecoplus\",\n    \"Paris|Bangkok|2019-03-17T13:57:39.492|premium\"\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:30080/findAll/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30080",
+					"path": [
+						"findAll",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save 1 itinerary in hashmap",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"departureCity\": \"Paris\",\n    \"arrivalCity\": \"Bangkok\",\n    \"date\": \"2019-03-16T13:56:39.493\",\n    \"cabin\": \"eco\",\n    \"payload\": \"payload_hashmap\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:30080/itinerary/hashmap",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30080",
+					"path": [
+						"itinerary",
+						"hashmap"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find 1 itinerary in hashmap",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "Paris|Bangkok|2019-03-16T13:56:39.493|eco",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:30080/find/hashmap",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30080",
+					"path": [
+						"find",
+						"hashmap"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save 2 itineraries in hashmap",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"departureCity\": \"Paris\",\n        \"arrivalCity\": \"Bangkok\",\n        \"date\": \"2019-03-16T13:56:39.495\",\n        \"cabin\": \"ecoplus\",\n        \"payload\": \"payload2_hashmap\"\n    },\n    {\n        \"departureCity\": \"Paris\",\n        \"arrivalCity\": \"Bangkok\",\n        \"date\": \"2019-03-16T13:57:39.496\",\n        \"cabin\": \"premium\",\n        \"payload\": \"payload3_hashmap\"\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:30080/itineraries/hashmap",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30080",
+					"path": [
+						"itineraries",
+						"hashmap"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save 2 itineraries in hashmap using pipeline",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"departureCity\": \"Paris\",\n        \"arrivalCity\": \"Bangkok\",\n        \"date\": \"2019-03-18T13:56:39.495\",\n        \"cabin\": \"ecoplus\",\n        \"payload\": \"payload4_hashmap\"\n    },\n    {\n        \"departureCity\": \"Paris\",\n        \"arrivalCity\": \"Bangkok\",\n        \"date\": \"2019-03-18T13:57:39.496\",\n        \"cabin\": \"premium\",\n        \"payload\": \"payload5_hashmap\"\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:30080/itineraries/hashmap/pipeline",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30080",
+					"path": [
+						"itineraries",
+						"hashmap",
+						"pipeline"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find all itineraries in hashmap",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    \"Paris|Bangkok|2019-03-16T13:56:39.493|eco\",\n    \"Paris|Bangkok|2019-03-16T13:56:39.495|ecoplus\",\n    \"Paris|Bangkok|2019-03-16T13:57:39.496|premium\",\n    \"Paris|Bangkok|2019-03-18T13:56:39.495|ecoplus\",\n    \"Paris|Bangkok|2019-03-18T13:57:39.496|premium\"\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:30080/findAll/hashmap",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30080",
+					"path": [
+						"findAll",
+						"hashmap"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete all itineraries",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:30080/itineraries",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30080",
+					"path": [
+						"itineraries"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

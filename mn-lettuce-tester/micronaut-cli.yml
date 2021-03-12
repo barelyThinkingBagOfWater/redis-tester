@@ -1,0 +1,7 @@
+applicationType: default
+defaultPackage: mn.lettuce.tester
+testFramework: junit
+sourceLanguage: java
+buildTool: maven
+features: [app-name, http-client, java, java-application, junit, logback, maven, netty-server, readme, redis-lettuce, shade, yaml]
+#Remove unused features
