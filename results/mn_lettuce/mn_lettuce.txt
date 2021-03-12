@@ -1,0 +1,81 @@
+14:19:54.150 [main] INFO  m.l.t.r.LettuceRepositoryTest - Testing now method:saveInHashmap(TestInfo)
+14:19:55.400 [lettuce-nioEventLoop-5-1] INFO  m.l.t.r.LettuceRepositoryTest - time taken:1250 ms
+14:20:17.030 [main] INFO  m.l.t.r.LettuceRepositoryTest - 
+14:20:17.030 [main] INFO  m.l.t.r.LettuceRepositoryTest - Testing now method:findAll(TestInfo)
+14:20:19.259 [lettuce-nioEventLoop-5-1] INFO  m.l.t.r.LettuceRepositoryTest - time taken:2229 ms
+14:20:19.274 [main] INFO  m.l.t.r.LettuceRepositoryTest - 
+14:20:19.275 [main] INFO  m.l.t.r.LettuceRepositoryTest - Testing now method:saveAllInHashMap(TestInfo)
+14:20:39.164 [lettuce-nioEventLoop-5-1] INFO  m.l.t.r.LettuceRepositoryTest - time taken:19889 ms
+14:20:41.237 [main] INFO  m.l.t.r.LettuceRepositoryTest - 
+14:20:41.237 [main] INFO  m.l.t.r.LettuceRepositoryTest - Testing now method:save(TestInfo)
+14:20:42.155 [lettuce-nioEventLoop-5-1] INFO  m.l.t.r.LettuceRepositoryTest - time taken:918 ms
+14:21:02.077 [main] INFO  m.l.t.r.LettuceRepositoryTest - 
+14:21:02.077 [main] INFO  m.l.t.r.LettuceRepositoryTest - Testing now method:findAllInHashMap(TestInfo)
+14:21:04.138 [lettuce-nioEventLoop-5-1] INFO  m.l.t.r.LettuceRepositoryTest - time taken:2061 ms
+14:21:04.152 [main] INFO  m.l.t.r.LettuceRepositoryTest - 
+14:21:04.152 [main] INFO  m.l.t.r.LettuceRepositoryTest - Testing now method:saveAll(TestInfo)
+14:21:23.656 [lettuce-nioEventLoop-5-1] INFO  m.l.t.r.LettuceRepositoryTest - time taken:19504 ms
+
+
+save -> saveInHashmap
+
+
+
+================================================================================
+---- Global Information --------------------------------------------------------
+> request count                                    1000000 (OK=956798 KO=43202 )
+> min response time                                   1081 (OK=1081   KO=85555 )
+> max response time                                 223164 (OK=223164 KO=214711)
+> mean response time                                118710 (OK=116459 KO=168560)
+> std deviation                                      61477 (OK=61780  KO=18899 )
+> response time 50th percentile                     135714 (OK=131451 KO=171435)
+> response time 75th percentile                     171588 (OK=170794 KO=180185)
+> response time 95th percentile                     198181 (OK=198663 KO=192718)
+> response time 99th percentile                     211020 (OK=211140 KO=195979)
+> mean requests/sec                                2739.726 (OK=2621.364 KO=118.362)
+---- Response Time Distribution ------------------------------------------------
+> t < 800 ms                                             0 (  0%)
+> 800 ms < t < 1200 ms                                  37 (  0%)
+> t > 1200 ms                                       956761 ( 96%)
+> failed                                             43202 (  4%)
+---- Errors --------------------------------------------------------------------
+> i.g.h.c.i.RequestTimeoutException: Request timeout to localhos  33615 (77.81%)
+t/127.0.0.1:30080 after 60000 ms
+> j.n.ConnectException: connect(..) failed: Cannot assign reques   7040 (16.30%)
+ted address
+> i.g.h.c.i.RequestTimeoutException: Request timeout after 60000   2547 ( 5.90%)
+ ms
+================================================================================
+
+
+================================================================================
+---- Global Information --------------------------------------------------------
+> request count                                    1000000 (OK=959520 KO=40480 )
+> min response time                                    978 (OK=978    KO=75505 )
+> max response time                                 236174 (OK=236174 KO=229878)
+> mean response time                                120073 (OK=116355 KO=208198)
+> std deviation                                      65925 (OK=64457  KO=28082 )
+> response time 50th percentile                     121938 (OK=118618 KO=216747)
+> response time 75th percentile                     181010 (OK=175297 KO=221712)
+> response time 95th percentile                     217107 (OK=213147 KO=228202)
+> response time 99th percentile                     225158 (OK=222834 KO=229840)
+> mean requests/sec                                2747.253 (OK=2636.044 KO=111.209)
+---- Response Time Distribution ------------------------------------------------
+> t < 800 ms                                             0 (  0%)
+> 800 ms < t < 1200 ms                                  53 (  0%)
+> t > 1200 ms                                       959467 ( 96%)
+> failed                                             40480 (  4%)
+---- Errors --------------------------------------------------------------------
+> i.g.h.c.i.RequestTimeoutException: Request timeout to localhos  31701 (78.31%)
+t/127.0.0.1:30080 after 60000 ms
+> i.g.h.c.i.RequestTimeoutException: Request timeout after 60000   4702 (11.62%)
+ ms
+> j.n.ConnectException: connect(..) failed: Cannot assign reques   4077 (10.07%)
+ted address
+================================================================================
+
+Reports generated in 0s.
+Please open the following file: /home/xavier/workspace/fahrad/load-tester/target/gatling/scenarios-20210312090845085/index.html
+
+Process finished with exit code 0
+

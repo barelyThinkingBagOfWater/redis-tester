@@ -34,7 +34,7 @@ class LettuceRepositoryTest {
 
     private final ItinerariesGenerator generator = new ItinerariesGenerator();
 
-    private static final Long TESTED_ENTITIES_COUNT = 100L;
+    private static final Long TESTED_ENTITIES_COUNT = 10000L;
 
 
     @BeforeEach

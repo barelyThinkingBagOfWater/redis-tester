@@ -1,8 +1,6 @@
 package mn.lettuce.tester.repositories;
 
 
-import io.lettuce.core.KeyValue;
-import io.lettuce.core.Value;
 import io.micronaut.context.annotation.Property;
 import io.micronaut.test.extensions.junit5.annotation.MicronautTest;
 import lombok.extern.slf4j.Slf4j;
@@ -17,7 +15,6 @@ import reactor.core.publisher.Mono;
 
 import javax.inject.Inject;
 import java.util.List;
-import java.util.Map;
 import java.util.concurrent.atomic.AtomicLong;
 
 
@@ -31,7 +28,8 @@ import java.util.concurrent.atomic.AtomicLong;
  **/
 @Slf4j
 @MicronautTest
-@Property(name = "redis.codec", value = "SNAPPY")
+@Property(name = "redis.codec", value = "NONE")
+@Property(name = "micronaut.server.port", value = "8080")
 class LettuceRepositoryTest {
 
     @Inject
@@ -39,7 +37,7 @@ class LettuceRepositoryTest {
 
     private final ItinerariesGenerator generator = new ItinerariesGenerator();
 
-    private static final Long TESTED_ENTITIES_COUNT = 1000L;
+    private static final Long TESTED_ENTITIES_COUNT = 10000L;
 
 
     @BeforeEach

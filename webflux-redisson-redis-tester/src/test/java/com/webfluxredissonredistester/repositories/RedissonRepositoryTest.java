@@ -44,23 +44,12 @@ class RedissonRepositoryTest {
     private RedissonRepository repository;
     private final ItinerariesGenerator generator = new ItinerariesGenerator();
     
-    private static final Long TESTED_ENTITIES_COUNT = 1000L;
+    private static final Long TESTED_ENTITIES_COUNT = 10000L;
 
 
     @BeforeEach
     public void setUp() {
         repository.deleteAll().block();
-
-        log.info("");
-        log.info("STATS BEFORE TEST");
-        logInterestingStats();
-    }
-
-    @AfterEach
-    public void cleanUp() {
-        log.info("");
-        log.info("STATS AFTER TEST");
-        logInterestingStats();
     }
 
 
@@ -235,7 +224,7 @@ class RedissonRepositoryTest {
                 .blockLast();
     }
 
-        @Test
+//        @Test
     public void listAllInternalMetrics() {
         Properties props = repository.getInternalMetrics().block();
         props.keySet()

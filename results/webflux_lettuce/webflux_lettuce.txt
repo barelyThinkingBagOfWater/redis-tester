@@ -1,0 +1,91 @@
+2021-03-12 14:30:04.186  INFO 66611 --- [           main] c.w.repositories.LettuceRepositoryITest  : Testing now method:saveInHashmap(TestInfo)
+2021-03-12 14:30:05.633  INFO 66611 --- [llEventLoop-4-1] c.w.repositories.LettuceRepositoryITest  : time taken:1447 ms
+2021-03-12 14:30:05.716  INFO 66611 --- [           main] c.w.repositories.LettuceRepository       : Now saveAll 10000 entities
+2021-03-12 14:30:25.767  INFO 66611 --- [           main] c.w.repositories.LettuceRepositoryITest  : 
+2021-03-12 14:30:25.767  INFO 66611 --- [           main] c.w.repositories.LettuceRepositoryITest  : Testing now method:findAll(TestInfo)
+2021-03-12 14:30:28.384  INFO 66611 --- [llEventLoop-4-1] c.w.repositories.LettuceRepositoryITest  : time taken:2617 ms
+2021-03-12 14:30:28.598  INFO 66611 --- [           main] c.w.repositories.LettuceRepositoryITest  : 
+2021-03-12 14:30:28.598  INFO 66611 --- [           main] c.w.repositories.LettuceRepositoryITest  : Testing now method:saveAllInHashMap(TestInfo)
+2021-03-12 14:30:50.410  INFO 66611 --- [llEventLoop-4-1] c.w.repositories.LettuceRepositoryITest  : time taken:21812 ms
+2021-03-12 14:30:50.434  INFO 66611 --- [           main] c.w.repositories.LettuceRepositoryITest  : 
+2021-03-12 14:30:50.434  INFO 66611 --- [           main] c.w.repositories.LettuceRepositoryITest  : Testing now method:save(TestInfo)
+2021-03-12 14:30:51.809  INFO 66611 --- [llEventLoop-4-1] c.w.repositories.LettuceRepositoryITest  : time taken:1375 ms
+2021-03-12 14:31:12.813  INFO 66611 --- [           main] c.w.repositories.LettuceRepositoryITest  : 
+2021-03-12 14:31:12.813  INFO 66611 --- [           main] c.w.repositories.LettuceRepositoryITest  : Testing now method:findAllInHashMap(TestInfo)
+2021-03-12 14:31:15.085  INFO 66611 --- [llEventLoop-4-1] c.w.repositories.LettuceRepositoryITest  : time taken:2272 ms
+2021-03-12 14:31:15.099  INFO 66611 --- [           main] c.w.repositories.LettuceRepository       : Now saveAll 10000 entities
+2021-03-12 14:31:15.099  INFO 66611 --- [           main] c.w.repositories.LettuceRepositoryITest  : 
+2021-03-12 14:31:15.099  INFO 66611 --- [           main] c.w.repositories.LettuceRepositoryITest  : Testing now method:saveAll(TestInfo)
+2021-03-12 14:31:35.239  INFO 66611 --- [llEventLoop-4-1] c.w.repositories.LettuceRepositoryITest  : time taken:20140 ms
+
+1375 ms
+save -> saveInHashmap
+
+
+
+GATLING
+
+
+
+save1, 200k 30 sec
+> t < 800 ms                                           473 (  0%)
+> 800 ms < t < 1200 ms                                2007 (  1%)
+> t > 1200 ms                                       197520 ( 99%)
+
+
+save1, 100k 30 sec
+> t < 800 ms                                         99998 (100%)
+> 800 ms < t < 1200 ms                                   2 (  0%)
+> t > 1200 ms                                            0 (  0%)
+> failed                                                 0 (  0%)
+
+
+save1, 300k 30 sec
+> t < 800 ms                                          4304 (  1%)
+> 800 ms < t < 1200 ms                                5589 (  2%)
+> t > 1200 ms                                       290107 ( 97%)
+> failed                                                 0 (  0%)
+
+
+save1, 500k 30sec
+
+---- Response Time Distribution ------------------------------------------------
+> t < 800 ms                                          1669 (  0%)
+> 800 ms < t < 1200 ms                                2883 (  1%)
+> t > 1200 ms                                       483918 ( 97%)
+> failed                                             11530 (  2%)
+---- Errors --------------------------------------------------------------------
+> i.g.h.c.i.RequestTimeoutException: Request timeout to localhos   9201 (79.80%)
+t/127.0.0.1:30080 after 60000 ms
+> j.n.ConnectException: connect(..) failed: Cannot assign reques   1656 (14.36%)
+ted address
+> i.g.h.c.i.RequestTimeoutException: Request timeout after 60000    673 ( 5.84%)
+ ms
+================================================================================
+
+
+================================================================================
+---- Global Information --------------------------------------------------------
+> request count                                    1000000 (OK=962792 KO=37208 )
+> min response time                                    341 (OK=341    KO=89434 )
+> max response time                                 222191 (OK=221775 KO=222191)
+> mean response time                                117523 (OK=114663 KO=191508)
+> std deviation                                      59376 (OK=58495  KO=22939 )
+> response time 50th percentile                     122934 (OK=118365 KO=200297)
+> response time 75th percentile                     170253 (OK=167904 KO=206648)
+> response time 95th percentile                     201095 (OK=197985 KO=212586)
+> response time 99th percentile                     211685 (OK=208139 KO=221479)
+> mean requests/sec                                2840.909 (OK=2735.205 KO=105.705)
+---- Response Time Distribution ------------------------------------------------
+> t < 800 ms                                            37 (  0%)
+> 800 ms < t < 1200 ms                                  24 (  0%)
+> t > 1200 ms                                       962731 ( 96%)
+> failed                                             37208 (  4%)
+---- Errors --------------------------------------------------------------------
+> i.g.h.c.i.RequestTimeoutException: Request timeout to localhos  30220 (81.22%)
+t/127.0.0.1:30080 after 60000 ms
+> i.g.h.c.i.RequestTimeoutException: Request timeout after 60000   3812 (10.25%)
+ ms
+> j.n.ConnectException: connect(..) failed: Cannot assign reques   3176 ( 8.54%)
+ted address
+================================================================================

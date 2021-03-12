@@ -44,24 +44,14 @@ class LettuceRepositoryTest {
     private LettuceRepository repository;
     private final ItinerariesGenerator generator = new ItinerariesGenerator();
 
-    private static final long TESTED_ENTITIES_COUNT = 100;
+    private static final long TESTED_ENTITIES_COUNT = 10000;
 
 
     @BeforeEach
     public void setUp() {
         repository.deleteAll();
-
-        log.info("");
-        log.info("STATS BEFORE TEST");
-        logInterestingStats();
     }
 
-    @AfterEach
-    public void cleanUp() {
-        log.info("");
-        log.info("STATS AFTER TEST");
-        logInterestingStats();
-    }
 
     @Test
     public void save(TestInfo testInfo) {
@@ -202,7 +192,7 @@ class LettuceRepositoryTest {
                 .forEach(prop -> log.info("{}:{}", prop, props.getProperty(prop)));
     }
 
-    @Test
+//    @Test
     public void listAllInternalMetrics() {
         Properties props = repository.getInternalMetrics();
         props.keySet()

@@ -46,23 +46,12 @@ class LettuceRepositoryITest {
     private LettuceRepository repository;
     private final ItinerariesGenerator generator = new ItinerariesGenerator();
 
-    private static final int TESTED_ENTITIES_COUNT = 100;
+    private static final int TESTED_ENTITIES_COUNT = 10000;
 
 
     @BeforeEach
     public void setUp() {
         repository.deleteAll().block();
-
-        log.info("");
-        log.info("STATS BEFORE TEST");
-        logInterestingStats();
-    }
-
-    @AfterEach
-    public void cleanUp() {
-        log.info("");
-        log.info("STATS AFTER TEST");
-        logInterestingStats();
     }
 
     @Test
@@ -72,7 +61,7 @@ class LettuceRepositoryITest {
 
         // WHEN
         trackTimeUsedByCommand(
-                repository.saveAll(Flux.fromIterable(itineraries)),
+                repository.saveAll(itineraries),
                 testInfo);
 
         // THEN
@@ -111,7 +100,7 @@ class LettuceRepositoryITest {
         // GIVEN
         List<Itinerary> itineraries = generator.generateItinaries(TESTED_ENTITIES_COUNT);
         List<String> hashes = Flux.fromIterable(itineraries).map(Itinerary::getHash).collectList().block();
-        repository.saveAll(Flux.fromIterable(itineraries)).block();
+        repository.saveAll(itineraries).block();
 
         // WHEN
         Mono returnedList = trackTimeUsedByCommandWithReturn(repository.findAll(hashes), testInfo);
@@ -219,7 +208,7 @@ class LettuceRepositoryITest {
                 .blockLast();
     }
 
-    @Test
+//    @Test
     public void listAllInternalMetrics() {
         Properties props = repository.getInternalMetrics().block();
         props.keySet()

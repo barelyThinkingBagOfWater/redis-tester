@@ -32,8 +32,8 @@ public class ItinerariesGenerator {
         for (int i = 0; i < number; i++) {
             itineraries.add(new Itinerary(generateRandomCity(), generateRandomCity(),
                     generateRandomDateTime().toString(),
-//                    generateRandomCabin(), DEFAULT_PAYLOAD)));
-                    generateRandomCabin(), "payload"));
+                    generateRandomCabin(), DEFAULT_PAYLOAD));
+//                    generateRandomCabin(), "payload"));
         }
 
         hashStack.push(gson.toJson(itineraries.stream().map(itinerary -> itinerary.getHash())

@@ -1,0 +1,60 @@
+2021-03-12 14:22:36,727 INFO  [com.qua.rep.RedissonRepositoryTest] (main) Testing now method:saveInHashmap(TestInfo)
+2021-03-12 14:22:39,134 INFO  [com.qua.rep.RedissonRepositoryTest] (redisson-netty-2-28) time taken:2407 ms
+2021-03-12 14:22:43,781 INFO  [com.qua.rep.RedissonRepositoryTest] (main) 
+2021-03-12 14:22:43,782 INFO  [com.qua.rep.RedissonRepositoryTest] (main) Testing now method:findAll(TestInfo)
+2021-03-12 14:22:45,884 INFO  [com.qua.rep.RedissonRepositoryTest] (redisson-netty-2-8) time taken:2102 ms
+2021-03-12 14:22:45,929 INFO  [com.qua.rep.RedissonRepositoryTest] (main) 
+2021-03-12 14:22:45,929 INFO  [com.qua.rep.RedissonRepositoryTest] (main) Testing now method:saveAllInHashMap(TestInfo)
+2021-03-12 14:22:47,988 INFO  [com.qua.rep.RedissonRepositoryTest] (redisson-netty-2-29) time taken:2059 ms
+2021-03-12 14:22:50,244 INFO  [com.qua.rep.RedissonRepositoryTest] (main) 
+2021-03-12 14:22:50,245 INFO  [com.qua.rep.RedissonRepositoryTest] (main) Testing now method:save(TestInfo)
+2021-03-12 14:22:52,388 INFO  [com.qua.rep.RedissonRepositoryTest] (redisson-netty-2-11) time taken:2143 ms
+2021-03-12 14:22:52,428 INFO  [com.qua.rep.RedissonRepositoryTest] (main) 
+2021-03-12 14:22:52,428 INFO  [com.qua.rep.RedissonRepositoryTest] (main) Testing now method:saveAllWithPipelining(TestInfo)
+2021-03-12 14:22:54,461 INFO  [com.qua.rep.RedissonRepositoryTest] (redisson-netty-2-30) time taken:2033 ms
+2021-03-12 14:22:56,519 INFO  [com.qua.rep.RedissonRepositoryTest] (main) 
+2021-03-12 14:22:56,519 INFO  [com.qua.rep.RedissonRepositoryTest] (main) Testing now method:findAllInHashMap(TestInfo)
+2021-03-12 14:22:58,603 INFO  [com.qua.rep.RedissonRepositoryTest] (redisson-netty-2-6) time taken:2084 ms
+2021-03-12 14:22:58,615 INFO  [com.qua.rep.RedissonRepositoryTest] (main) 
+2021-03-12 14:22:58,615 INFO  [com.qua.rep.RedissonRepositoryTest] (main) Testing now method:saveAll(TestInfo)
+2021-03-12 14:23:00,567 INFO  [com.qua.rep.RedissonRepositoryTest] (redisson-netty-2-10) time taken:1952 ms
+2021-03-12 14:23:00,609 INFO  [com.qua.rep.RedissonRepositoryTest] (main) 
+2021-03-12 14:23:00,609 INFO  [com.qua.rep.RedissonRepositoryTest] (main) Testing now method:saveAllInHashMapWithPipelining(TestInfo)
+2021-03-12 14:23:02,654 INFO  [com.qua.rep.RedissonRepositoryTest] (redisson-netty-2-3) time taken:2045 ms
+
+1952 ms
+saveAll -> saveAllWithPipelining
+
+
+
+================================================================================
+---- Global Information --------------------------------------------------------
+> request count                                    1000000 (OK=963747 KO=36253 )
+> min response time                                    831 (OK=831    KO=151736)
+> max response time                                 211822 (OK=204861 KO=211822)
+> mean response time                                108723 (OK=106009 KO=180888)
+> std deviation                                      57458 (OK=56745  KO=7845  )
+> response time 50th percentile                     115947 (OK=111210 KO=181366)
+> response time 75th percentile                     160646 (OK=157732 KO=186938)
+> response time 95th percentile                     184956 (OK=183368 KO=194644)
+> response time 99th percentile                     194898 (OK=194477 KO=197759)
+> mean requests/sec                                2932.551 (OK=2826.238 KO=106.314)
+---- Response Time Distribution ------------------------------------------------
+> t < 800 ms                                             0 (  0%)
+> 800 ms < t < 1200 ms                                  49 (  0%)
+> t > 1200 ms                                       963698 ( 96%)
+> failed                                             36253 (  4%)
+---- Errors --------------------------------------------------------------------
+> i.g.h.c.i.RequestTimeoutException: Request timeout to localhos  30796 (84.95%)
+t/127.0.0.1:30080 after 60000 ms
+> i.g.h.c.i.RequestTimeoutException: Request timeout after 60000   5439 (15.00%)
+ ms
+> j.n.ConnectException: connect(..) failed: Cannot assign reques     18 ( 0.05%)
+ted address
+================================================================================
+
+Reports generated in 0s.
+Please open the following file: /home/xavier/workspace/fahrad/load-tester/target/gatling/scenarios-20210312093044302/index.html
+
+Process finished with exit code 0
+
