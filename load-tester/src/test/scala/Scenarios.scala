@@ -18,7 +18,6 @@ class Scenarios extends Simulation {
     .contentTypeHeader("application/json")
 
 
-
   def generateRandomItineraries(): String = {
     generator generateItinerariesAsJson NUMBER_OF_ITINERARIES_TO_SAVE;
   }
@@ -41,7 +40,7 @@ class Scenarios extends Simulation {
         http("saving an itinerary using save")
           .post("/itinerary")
           .body(StringBody("${itinerary}")).asJson)
-//      .exec(deleteAllItineraries())
+  //      .exec(deleteAllItineraries())
 
 
   val findOneItineraryScenario: ScenarioBuilder =
@@ -57,7 +56,7 @@ class Scenarios extends Simulation {
           .body(StringBody("${hash}"))
           .check(status.not(404))
           .asJson)
-//      .exec(deleteAllItineraries())
+  //      .exec(deleteAllItineraries())
 
 
   val saveItinerariesWithSaveAllScenario: ScenarioBuilder =
@@ -67,7 +66,7 @@ class Scenarios extends Simulation {
         http("saving itineraries using saveAll")
           .post("/itineraries")
           .body(StringBody("${itineraries}")).asJson)
-//      .exec(deleteAllItineraries())
+  //      .exec(deleteAllItineraries())
 
   val saveItinerariesWithSaveAllUsingPipelineScenario: ScenarioBuilder =
     scenario("Saving " + NUMBER_OF_ITINERARIES_TO_SAVE + " itineraries with saveAll using pipeline")
@@ -76,7 +75,7 @@ class Scenarios extends Simulation {
         http("saving itineraries using saveAll with pipeline")
           .post("/itineraries/pipeline")
           .body(StringBody("${itineraries}")).asJson)
-//      .exec(deleteAllItineraries())
+  //      .exec(deleteAllItineraries())
 
   val findItinerariesScenario: ScenarioBuilder =
     scenario("Finding " + NUMBER_OF_ITINERARIES_TO_SAVE + " itineraries after saving them")
@@ -91,7 +90,7 @@ class Scenarios extends Simulation {
           .body(StringBody("${hashes}"))
           .check(status.not(404))
           .asJson)
-//      .exec(deleteAllItineraries())
+  //      .exec(deleteAllItineraries())
 
   val saveOneItineraryInHashmapScenario: ScenarioBuilder =
     scenario("Saving one itinerary in hashmap")
@@ -100,7 +99,7 @@ class Scenarios extends Simulation {
         http("saving an itinerary using save in a hashmap")
           .post("/itinerary/hashmap")
           .body(StringBody("${itinerary}")).asJson)
-//      .exec(deleteAllItineraries())
+  //      .exec(deleteAllItineraries())
 
   val findOneItineraryInHashmapScenario: ScenarioBuilder =
     scenario("Finding one itinerary in hashmap after saving it")
@@ -115,7 +114,7 @@ class Scenarios extends Simulation {
           .body(StringBody("${hash}"))
           .check(status.not(404))
           .asJson)
-//      .exec(deleteAllItineraries())
+  //      .exec(deleteAllItineraries())
 
   val saveItinerariesWithSaveAllInHashmapScenario: ScenarioBuilder =
     scenario("Saving " + NUMBER_OF_ITINERARIES_TO_SAVE + " itineraries with saveAll using pipeline")
@@ -124,7 +123,7 @@ class Scenarios extends Simulation {
         http("saving itineraries using saveAll in hashmap")
           .post("/itineraries/hashmap")
           .body(StringBody("${itineraries}")).asJson)
-//      .exec(deleteAllItineraries())
+  //      .exec(deleteAllItineraries())
 
   val saveItinerariesWithSaveAllInHashmapUsingPipelineScenario: ScenarioBuilder =
     scenario("Saving " + NUMBER_OF_ITINERARIES_TO_SAVE + " itineraries with saveAll using pipeline")
@@ -133,7 +132,7 @@ class Scenarios extends Simulation {
         http("saving itineraries using saveAll in hashmap with pipeline")
           .post("/itineraries/hashmap/pipeline")
           .body(StringBody("${itineraries}")).asJson)
-//      .exec(deleteAllItineraries())
+  //      .exec(deleteAllItineraries())
 
   val findItinerariesInHashmapScenario: ScenarioBuilder =
     scenario("Finding " + NUMBER_OF_ITINERARIES_TO_SAVE + " itineraries in hashmap after saving them")
@@ -148,29 +147,29 @@ class Scenarios extends Simulation {
           .body(StringBody("${hashes}"))
           .check(status.not(404))
           .asJson)
-//      .exec(deleteAllItineraries())
+  //      .exec(deleteAllItineraries())
 
 
   // WRITING
   setUp(saveOneItineraryScenario
-//  setUp(saveItinerariesWithSaveAllScenario
-//  setUp(saveItinerariesWithSaveAllUsingPipelineScenario
-//  setUp(saveOneItineraryInHashmapScenario
-//  setUp(saveItinerariesWithSaveAllInHashmapScenario
-//  setUp(saveItinerariesWithSaveAllInHashmapUsingPipelineScenario
+    //  setUp(saveItinerariesWithSaveAllScenario
+    //  setUp(saveItinerariesWithSaveAllUsingPipelineScenario
+    //  setUp(saveOneItineraryInHashmapScenario
+    //  setUp(saveItinerariesWithSaveAllInHashmapScenario
+    //  setUp(saveItinerariesWithSaveAllInHashmapUsingPipelineScenario
 
     // READING
-//    setUp(findOneItineraryScenario
-//  setUp(findItinerariesScenario
-//  setUp(findOneItineraryInHashmapScenario
-//  setUp(findItinerariesInHashmapScenario
+    //    setUp(findOneItineraryScenario
+    //  setUp(findItinerariesScenario
+    //  setUp(findOneItineraryInHashmapScenario
+    //  setUp(findItinerariesInHashmapScenario
 
 
-//    .inject(atOnceUsers(2))
+    //    .inject(atOnceUsers(2))
     .inject(rampUsers(700000) during (30 second))
-//    .inject(rampUsers(100000) during (30 second))
-//    .inject(rampUsers(1000) during (30 second))
-//    .inject(rampUsers(2))
-//    .inject(rampUsersPerSec(100) during (20 minutes))
+    //    .inject(rampUsers(100000) during (30 second))
+    //    .inject(rampUsers(1000) during (30 second))
+    //    .inject(rampUsers(2))
+    //    .inject(rampUsersPerSec(100) during (20 minutes))
     .protocols(httpProtocol))
 }

@@ -1,4 +1,4 @@
 FROM openjdk:11
 
 ADD target/quarkus-lettuce-tester-runner /
-ENTRYPOINT ["bash","/quarkus-lettuce-tester-runner"]
+ENTRYPOINT ["/quarkus-lettuce-tester-runner"]

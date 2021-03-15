@@ -1,0 +1,146 @@
+The size in DB is basically the same regardless of the compression algorithm, about 78.3 +-1 MB with 700k entities.
+
+
+redis.codec=NONE
+##Default values below for now
+redis.threads.number=32
+redis.connection.pool.size=64
+redis.timeout=20000
+redis.retry.attempts=1
+redis.retry.interval=1500
+
+---- Global Information --------------------------------------------------------
+> request count                                     700000 (OK=700000 KO=0     )
+> min response time                                    397 (OK=397    KO=-     )
+> max response time                                  33649 (OK=33649  KO=-     )
+> mean response time                                 12532 (OK=12532  KO=-     )
+> std deviation                                       6733 (OK=6733   KO=-     )
+> response time 50th percentile                      10297 (OK=10294  KO=-     )
+> response time 75th percentile                      18507 (OK=18506  KO=-     )
+> response time 95th percentile                      23632 (OK=23633  KO=-     )
+> response time 99th percentile                      28343 (OK=28348  KO=-     )
+> mean requests/sec                                8974.359 (OK=8974.359 KO=-     )
+---- Response Time Distribution ------------------------------------------------
+> t < 800 ms                                          1631 (  0%)
+> 800 ms < t < 1200 ms                                5128 (  1%)
+> t > 1200 ms                                       693241 ( 99%)
+> failed                                                 0 (  0%)
+================================================================================
+
+
+
+
+redis.codec=SNAPPY
+##Default values below for now
+redis.threads.number=32
+redis.connection.pool.size=64
+redis.timeout=20000
+redis.retry.attempts=1
+redis.retry.interval=1500
+
+
+---- Global Information --------------------------------------------------------
+> request count                                     700000 (OK=700000 KO=0     )
+> min response time                                    541 (OK=541    KO=-     )
+> max response time                                  33041 (OK=33041  KO=-     )
+> mean response time                                 12649 (OK=12649  KO=-     )
+> std deviation                                       6279 (OK=6279   KO=-     )
+> response time 50th percentile                      11287 (OK=11287  KO=-     )
+> response time 75th percentile                      17441 (OK=17437  KO=-     )
+> response time 95th percentile                      23782 (OK=23792  KO=-     )
+> response time 99th percentile                      26404 (OK=26404  KO=-     )
+> mean requests/sec                                8860.759 (OK=8860.759 KO=-     )
+---- Response Time Distribution ------------------------------------------------
+> t < 800 ms                                           612 (  0%)
+> 800 ms < t < 1200 ms                                1200 (  0%)
+> t > 1200 ms                                       698188 (100%)
+> failed                                                 0 (  0%)
+================================================================================
+
+
+redis.codec=LZ4
+##Default values below for now
+redis.threads.number=32
+redis.connection.pool.size=64
+redis.timeout=20000
+redis.retry.attempts=1
+redis.retry.interval=1500
+
+================================================================================
+---- Global Information --------------------------------------------------------
+> request count                                     700000 (OK=700000 KO=0     )
+> min response time                                     73 (OK=73     KO=-     )
+> max response time                                  31036 (OK=31036  KO=-     )
+> mean response time                                 11871 (OK=11871  KO=-     )
+> std deviation                                       5967 (OK=5967   KO=-     )
+> response time 50th percentile                      11666 (OK=11662  KO=-     )
+> response time 75th percentile                      15900 (OK=15902  KO=-     )
+> response time 95th percentile                      22893 (OK=22885  KO=-     )
+> response time 99th percentile                      25585 (OK=25585  KO=-     )
+> mean requests/sec                                8974.359 (OK=8974.359 KO=-     )
+---- Response Time Distribution ------------------------------------------------
+> t < 800 ms                                          3220 (  0%)
+> 800 ms < t < 1200 ms                                3344 (  0%)
+> t > 1200 ms                                       693436 ( 99%)
+> failed                                                 0 (  0%)
+================================================================================
+
+
+
+redis.codec=LZ4
+##Default values below for now
+redis.threads.number=4
+redis.connection.pool.size=8
+redis.timeout=20000
+redis.retry.attempts=1
+redis.retry.interval=1500
+
+
+> request count                                     700000 (OK=700000 KO=0     )
+> min response time                                   1356 (OK=1356   KO=-     )
+> max response time                                  39014 (OK=39014  KO=-     )
+> mean response time                                 14100 (OK=14100  KO=-     )
+> std deviation                                       7198 (OK=7198   KO=-     )
+> response time 50th percentile                      11892 (OK=11892  KO=-     )
+> response time 75th percentile                      19930 (OK=19922  KO=-     )
+> response time 95th percentile                      26607 (OK=26604  KO=-     )
+> response time 99th percentile                      31174 (OK=31175  KO=-     )
+> mean requests/sec                                8536.585 (OK=8536.585 KO=-     )
+---- Response Time Distribution ------------------------------------------------
+> t < 800 ms                                             0 (  0%)
+> 800 ms < t < 1200 ms                                   0 (  0%)
+> t > 1200 ms                                       700000 (100%)
+> failed                                                 0 (  0%)
+================================================================================
+
+
+
+redis.codec=LZ4
+##Default values below for now
+redis.threads.number=128
+redis.connection.pool.size=256
+
+
+================================================================================
+---- Global Information --------------------------------------------------------
+> request count                                     700000 (OK=699792 KO=208   )
+> min response time                                   1131 (OK=1131   KO=30048 )
+> max response time                                  34513 (OK=34513  KO=34460 )
+> mean response time                                 13440 (OK=13435  KO=30969 )
+> std deviation                                       6960 (OK=6954   KO=1324  )
+> response time 50th percentile                      11348 (OK=11357  KO=30050 )
+> response time 75th percentile                      19184 (OK=19178  KO=32873 )
+> response time 95th percentile                      26082 (OK=26069  KO=32883 )
+> response time 99th percentile                      28621 (OK=28611  KO=34324 )
+> mean requests/sec                                8641.975 (OK=8639.407 KO=2.568 )
+---- Response Time Distribution ------------------------------------------------
+> t < 800 ms                                             0 (  0%)
+> 800 ms < t < 1200 ms                                  10 (  0%)
+> t > 1200 ms                                       699782 (100%)
+> failed                                               208 (  0%)
+---- Errors --------------------------------------------------------------------
+> i.n.c.ConnectTimeoutException: connection timed out: localhost    208 (100.0%)
+/127.0.0.1:30080
+================================================================================
+
+

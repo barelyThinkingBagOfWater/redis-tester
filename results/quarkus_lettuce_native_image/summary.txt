@@ -1,0 +1,48 @@
+Default conf with native image, not convincing at all
+
+1st try
+---- Global Information --------------------------------------------------------
+> request count                                     700000 (OK=699960 KO=40    )
+> min response time                                      1 (OK=1      KO=23885 )
+> max response time                                  44697 (OK=44697  KO=35032 )
+> mean response time                                 15988 (OK=15988  KO=28360 )
+> std deviation                                       9391 (OK=9391   KO=2927  )
+> response time 50th percentile                      14013 (OK=14010  KO=28354 )
+> response time 75th percentile                      23506 (OK=23510  KO=29335 )
+> response time 95th percentile                      32995 (OK=32994  KO=33367 )
+> response time 99th percentile                      36838 (OK=36837  KO=35032 )
+> mean requests/sec                                7526.882 (OK=7526.452 KO=0.43  )
+---- Response Time Distribution ------------------------------------------------
+> t < 800 ms                                          7496 (  1%)
+> 800 ms < t < 1200 ms                                4341 (  1%)
+> t > 1200 ms                                       688123 ( 98%)
+> failed                                                40 (  0%)
+---- Errors --------------------------------------------------------------------
+> i.n.c.ConnectTimeoutException: connection timed out: localhost     40 (100.0%)
+/127.0.0.1:30080
+================================================================================
+
+
+2nd try
+
+---- Global Information --------------------------------------------------------
+> request count                                     700000 (OK=699626 KO=374   )
+> min response time                                      1 (OK=1      KO=27927 )
+> max response time                                  42016 (OK=39583  KO=42016 )
+> mean response time                                 16256 (OK=16246  KO=34659 )
+> std deviation                                       8529 (OK=8520   KO=3192  )
+> response time 50th percentile                      17599 (OK=17594  KO=33117 )
+> response time 75th percentile                      22719 (OK=22710  KO=35991 )
+> response time 95th percentile                      29364 (OK=29338  KO=40112 )
+> response time 99th percentile                      32629 (OK=32602  KO=42014 )
+> mean requests/sec                                6796.117 (OK=6792.485 KO=3.631 )
+---- Response Time Distribution ------------------------------------------------
+> t < 800 ms                                          4868 (  1%)
+> 800 ms < t < 1200 ms                                4644 (  1%)
+> t > 1200 ms                                       690114 ( 99%)
+> failed                                               374 (  0%)
+---- Errors --------------------------------------------------------------------
+> i.n.c.ConnectTimeoutException: connection timed out: localhost    374 (100.0%)
+/127.0.0.1:30080
+================================================================================
+
