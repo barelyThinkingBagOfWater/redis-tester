@@ -9,10 +9,14 @@ import lombok.extern.slf4j.Slf4j;
 import mn.lettuce.tester.entities.Itinerary;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
+import reactor.core.scheduler.Scheduler;
+import reactor.core.scheduler.Schedulers;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
 import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 @Singleton
 @Slf4j
@@ -27,11 +31,15 @@ public class LettuceRepository {
     @Inject
     private RedisServerReactiveCommands<String, String>  serverReactiveCommands;
 
+    private final ExecutorService executorService = Executors.newCachedThreadPool();
+
     private final static String DEFAULT_REDIS_HASHMAP_NAME = "TEST_HASHMAP";
 
 
     public Mono<String> save(Itinerary itinerary) {
-        return stringReactiveCommands.set(itinerary.getHash(), itinerary.getPayload());
+        return stringReactiveCommands.set(itinerary.getHash(), itinerary.getPayload())
+//                .subscribeOn(Schedulers.newParallel("parallel"))
+                ;
     }
 
     public Mono<String> saveAll(Flux<Itinerary> itineraries) {

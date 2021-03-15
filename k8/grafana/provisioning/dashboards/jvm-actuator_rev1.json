@@ -30,7 +30,7 @@
   "editable": true,
   "gnetId": 9568,
   "graphTooltip": 1,
-  "iteration": 1579944022352,
+  "iteration": 1615772045190,
   "links": [],
   "panels": [
     {
@@ -61,6 +61,12 @@
       "decimals": 1,
       "editable": true,
       "error": false,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
       "format": "s",
       "gauge": {
         "maxValue": 100,
@@ -93,7 +99,6 @@
       "maxDataPoints": 100,
       "nullPointMode": "connected",
       "nullText": null,
-      "options": {},
       "postfix": "",
       "postfixFontSize": "50%",
       "prefix": "",
@@ -149,6 +154,12 @@
       "decimals": null,
       "editable": true,
       "error": false,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
       "format": "dateTimeAsIso",
       "gauge": {
         "maxValue": 100,
@@ -181,7 +192,6 @@
       "maxDataPoints": 100,
       "nullPointMode": "connected",
       "nullText": null,
-      "options": {},
       "postfix": "",
       "postfixFontSize": "50%",
       "prefix": "",
@@ -237,6 +247,12 @@
       "decimals": 2,
       "editable": true,
       "error": false,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
       "format": "percent",
       "gauge": {
         "maxValue": 100,
@@ -268,7 +284,6 @@
       "maxDataPoints": 100,
       "nullPointMode": "connected",
       "nullText": null,
-      "options": {},
       "postfix": "",
       "postfixFontSize": "50%",
       "prefix": "",
@@ -323,6 +338,12 @@
       "decimals": 2,
       "editable": true,
       "error": false,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
       "format": "percent",
       "gauge": {
         "maxValue": 100,
@@ -354,7 +375,6 @@
       "maxDataPoints": 100,
       "nullPointMode": "connected",
       "nullText": null,
-      "options": {},
       "postfix": "",
       "postfixFontSize": "50%",
       "prefix": "",
@@ -427,6 +447,13 @@
       "dashLength": 10,
       "dashes": false,
       "datasource": "Prometheus",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "links": []
+        },
+        "overrides": []
+      },
       "fill": 1,
       "fillGradient": 0,
       "gridPos": {
@@ -435,6 +462,7 @@
         "x": 0,
         "y": 5
       },
+      "hiddenSeries": false,
       "id": 111,
       "legend": {
         "avg": false,
@@ -450,9 +478,10 @@
       "links": [],
       "nullPointMode": "null",
       "options": {
-        "dataLinks": []
+        "alertThreshold": true
       },
       "percentage": false,
+      "pluginVersion": "7.2.0",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -520,6 +549,13 @@
       "dashLength": 10,
       "dashes": false,
       "datasource": "Prometheus",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "links": []
+        },
+        "overrides": []
+      },
       "fill": 1,
       "fillGradient": 0,
       "gridPos": {
@@ -528,6 +564,7 @@
         "x": 6,
         "y": 5
       },
+      "hiddenSeries": false,
       "id": 112,
       "legend": {
         "avg": false,
@@ -543,9 +580,10 @@
       "links": [],
       "nullPointMode": "null",
       "options": {
-        "dataLinks": []
+        "alertThreshold": true
       },
       "percentage": false,
+      "pluginVersion": "7.2.0",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -610,6 +648,13 @@
       "dashLength": 10,
       "dashes": false,
       "datasource": "Prometheus",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "links": []
+        },
+        "overrides": []
+      },
       "fill": 1,
       "fillGradient": 0,
       "gridPos": {
@@ -618,6 +663,7 @@
         "x": 12,
         "y": 5
       },
+      "hiddenSeries": false,
       "id": 113,
       "legend": {
         "avg": false,
@@ -633,9 +679,10 @@
       "links": [],
       "nullPointMode": "null",
       "options": {
-        "dataLinks": []
+        "alertThreshold": true
       },
       "percentage": false,
+      "pluginVersion": "7.2.0",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -709,6 +756,13 @@
       "dashes": false,
       "datasource": "Prometheus",
       "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "links": []
+        },
+        "overrides": []
+      },
       "fill": 1,
       "fillGradient": 0,
       "gridPos": {
@@ -717,6 +771,7 @@
         "x": 18,
         "y": 5
       },
+      "hiddenSeries": false,
       "id": 119,
       "legend": {
         "alignAsTable": false,
@@ -733,9 +788,10 @@
       "links": [],
       "nullPointMode": "null",
       "options": {
-        "dataLinks": []
+        "alertThreshold": true
       },
       "percentage": false,
+      "pluginVersion": "7.2.0",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -853,6 +909,13 @@
       "datasource": "Prometheus",
       "editable": true,
       "error": false,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "links": []
+        },
+        "overrides": []
+      },
       "fill": 1,
       "fillGradient": 0,
       "grid": {
@@ -869,6 +932,7 @@
         "x": 0,
         "y": 13
       },
+      "hiddenSeries": false,
       "id": 24,
       "legend": {
         "avg": false,
@@ -884,9 +948,10 @@
       "links": [],
       "nullPointMode": "null",
       "options": {
-        "dataLinks": []
+        "alertThreshold": true
       },
       "percentage": false,
+      "pluginVersion": "7.2.0",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -977,6 +1042,13 @@
       "datasource": "Prometheus",
       "editable": true,
       "error": false,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "links": []
+        },
+        "overrides": []
+      },
       "fill": 1,
       "fillGradient": 0,
       "grid": {
@@ -993,6 +1065,7 @@
         "x": 6,
         "y": 13
       },
+      "hiddenSeries": false,
       "id": 25,
       "legend": {
         "avg": false,
@@ -1008,9 +1081,10 @@
       "links": [],
       "nullPointMode": "null",
       "options": {
-        "dataLinks": []
+        "alertThreshold": true
       },
       "percentage": false,
+      "pluginVersion": "7.2.0",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -1102,6 +1176,13 @@
       "datasource": "Prometheus",
       "editable": true,
       "error": false,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "links": []
+        },
+        "overrides": []
+      },
       "fill": 1,
       "fillGradient": 0,
       "grid": {
@@ -1118,6 +1199,7 @@
         "x": 12,
         "y": 13
       },
+      "hiddenSeries": false,
       "id": 26,
       "legend": {
         "alignAsTable": false,
@@ -1134,9 +1216,10 @@
       "links": [],
       "nullPointMode": "null",
       "options": {
-        "dataLinks": []
+        "alertThreshold": true
       },
       "percentage": false,
+      "pluginVersion": "7.2.0",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -1277,6 +1360,13 @@
       "datasource": "Prometheus",
       "editable": true,
       "error": false,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "links": []
+        },
+        "overrides": []
+      },
       "fill": 1,
       "fillGradient": 0,
       "grid": {
@@ -1293,6 +1383,7 @@
         "x": 18,
         "y": 13
       },
+      "hiddenSeries": false,
       "id": 86,
       "legend": {
         "avg": false,
@@ -1308,9 +1399,10 @@
       "links": [],
       "nullPointMode": "null",
       "options": {
-        "dataLinks": []
+        "alertThreshold": true
       },
       "percentage": false,
+      "pluginVersion": "7.2.0",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -1401,6 +1493,13 @@
       "datasource": "Prometheus",
       "editable": true,
       "error": false,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "links": []
+        },
+        "overrides": []
+      },
       "fill": 1,
       "fillGradient": 0,
       "grid": {
@@ -1417,6 +1516,7 @@
         "x": 0,
         "y": 21
       },
+      "hiddenSeries": false,
       "id": 106,
       "legend": {
         "avg": false,
@@ -1432,9 +1532,10 @@
       "links": [],
       "nullPointMode": "null",
       "options": {
-        "dataLinks": []
+        "alertThreshold": true
       },
       "percentage": false,
+      "pluginVersion": "7.2.0",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -1527,6 +1628,13 @@
       "datasource": "Prometheus",
       "editable": true,
       "error": false,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "links": []
+        },
+        "overrides": []
+      },
       "fill": 1,
       "fillGradient": 0,
       "grid": {
@@ -1543,6 +1651,7 @@
         "x": 6,
         "y": 21
       },
+      "hiddenSeries": false,
       "id": 93,
       "legend": {
         "avg": false,
@@ -1558,9 +1667,10 @@
       "links": [],
       "nullPointMode": "null",
       "options": {
-        "dataLinks": []
+        "alertThreshold": true
       },
       "percentage": false,
+      "pluginVersion": "7.2.0",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -1649,6 +1759,13 @@
       "datasource": "Prometheus",
       "editable": true,
       "error": false,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "links": []
+        },
+        "overrides": []
+      },
       "fill": 1,
       "fillGradient": 0,
       "grid": {
@@ -1665,6 +1782,7 @@
         "x": 12,
         "y": 21
       },
+      "hiddenSeries": false,
       "id": 32,
       "legend": {
         "avg": false,
@@ -1680,9 +1798,10 @@
       "links": [],
       "nullPointMode": "null",
       "options": {
-        "dataLinks": []
+        "alertThreshold": true
       },
       "percentage": false,
+      "pluginVersion": "7.2.0",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -1789,6 +1908,13 @@
       "dashLength": 10,
       "dashes": false,
       "datasource": "Prometheus",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "links": []
+        },
+        "overrides": []
+      },
       "fill": 1,
       "fillGradient": 0,
       "gridPos": {
@@ -1797,6 +1923,7 @@
         "x": 18,
         "y": 21
       },
+      "hiddenSeries": false,
       "id": 124,
       "legend": {
         "alignAsTable": false,
@@ -1814,9 +1941,10 @@
       "links": [],
       "nullPointMode": "null",
       "options": {
-        "dataLinks": []
+        "alertThreshold": true
       },
       "percentage": false,
+      "pluginVersion": "7.2.0",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -1888,6 +2016,13 @@
       "datasource": "Prometheus",
       "editable": true,
       "error": false,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "links": []
+        },
+        "overrides": []
+      },
       "fill": 1,
       "fillGradient": 0,
       "grid": {
@@ -1905,6 +2040,7 @@
         "y": 28
       },
       "height": "",
+      "hiddenSeries": false,
       "id": 91,
       "legend": {
         "alignAsTable": false,
@@ -1924,9 +2060,10 @@
       "links": [],
       "nullPointMode": "null",
       "options": {
-        "dataLinks": []
+        "alertThreshold": true
       },
       "percentage": true,
+      "pluginVersion": "7.2.0",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -2012,6 +2149,13 @@
       "datasource": "Prometheus",
       "editable": true,
       "error": false,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "links": []
+        },
+        "overrides": []
+      },
       "fill": 1,
       "fillGradient": 0,
       "grid": {
@@ -2028,6 +2172,7 @@
         "x": 18,
         "y": 28
       },
+      "hiddenSeries": false,
       "id": 61,
       "legend": {
         "avg": false,
@@ -2043,9 +2188,10 @@
       "links": [],
       "nullPointMode": "null",
       "options": {
-        "dataLinks": []
+        "alertThreshold": true
       },
       "percentage": false,
+      "pluginVersion": "7.2.0",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -2161,6 +2307,13 @@
       "datasource": "Prometheus",
       "editable": true,
       "error": false,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "links": []
+        },
+        "overrides": []
+      },
       "fill": 1,
       "fillGradient": 0,
       "grid": {
@@ -2177,6 +2330,7 @@
         "x": 0,
         "y": 36
       },
+      "hiddenSeries": false,
       "id": 3,
       "legend": {
         "alignAsTable": false,
@@ -2195,310 +2349,14 @@
       "maxPerRow": 3,
       "nullPointMode": "null",
       "options": {
-        "dataLinks": []
+        "alertThreshold": true
       },
       "percentage": false,
+      "pluginVersion": "7.2.0",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
       "repeat": "jvm_memory_pool_heap",
-      "scopedVars": {
-        "jvm_memory_pool_heap": {
-          "selected": false,
-          "text": "Eden Space",
-          "value": "Eden Space"
-        }
-      },
-      "seriesOverrides": [],
-      "spaceLength": 10,
-      "stack": false,
-      "steppedLine": false,
-      "targets": [
-        {
-          "expr": "jvm_memory_used_bytes{application=\"$application\", id=\"$jvm_memory_pool_heap\"}",
-          "format": "time_series",
-          "hide": false,
-          "interval": "",
-          "intervalFactor": 2,
-          "legendFormat": "used",
-          "metric": "",
-          "refId": "A",
-          "step": 1800
-        },
-        {
-          "expr": "jvm_memory_committed_bytes{application=\"$application\", id=\"$jvm_memory_pool_heap\"}",
-          "format": "time_series",
-          "hide": false,
-          "interval": "",
-          "intervalFactor": 2,
-          "legendFormat": "commited",
-          "metric": "",
-          "refId": "B",
-          "step": 1800
-        },
-        {
-          "expr": "jvm_memory_max_bytes{application=\"$application\", id=\"$jvm_memory_pool_heap\"}",
-          "format": "time_series",
-          "hide": false,
-          "interval": "",
-          "intervalFactor": 2,
-          "legendFormat": "max",
-          "metric": "",
-          "refId": "C",
-          "step": 1800
-        }
-      ],
-      "thresholds": [],
-      "timeFrom": null,
-      "timeRegions": [],
-      "timeShift": null,
-      "title": "$jvm_memory_pool_heap",
-      "tooltip": {
-        "msResolution": false,
-        "shared": true,
-        "sort": 0,
-        "value_type": "cumulative"
-      },
-      "type": "graph",
-      "x-axis": true,
-      "xaxis": {
-        "buckets": null,
-        "mode": "time",
-        "name": null,
-        "show": true,
-        "values": []
-      },
-      "y-axis": true,
-      "y_formats": [
-        "mbytes",
-        "short"
-      ],
-      "yaxes": [
-        {
-          "format": "bytes",
-          "label": null,
-          "logBase": 1,
-          "max": null,
-          "min": 0,
-          "show": true
-        },
-        {
-          "format": "short",
-          "label": null,
-          "logBase": 1,
-          "max": null,
-          "min": null,
-          "show": true
-        }
-      ],
-      "yaxis": {
-        "align": false,
-        "alignLevel": null
-      }
-    },
-    {
-      "aliasColors": {},
-      "bars": false,
-      "dashLength": 10,
-      "dashes": false,
-      "datasource": "Prometheus",
-      "editable": true,
-      "error": false,
-      "fill": 1,
-      "fillGradient": 0,
-      "grid": {
-        "leftLogBase": 1,
-        "leftMax": null,
-        "leftMin": null,
-        "rightLogBase": 1,
-        "rightMax": null,
-        "rightMin": null
-      },
-      "gridPos": {
-        "h": 7,
-        "w": 8,
-        "x": 8,
-        "y": 36
-      },
-      "id": 134,
-      "legend": {
-        "alignAsTable": false,
-        "avg": false,
-        "current": true,
-        "max": true,
-        "min": false,
-        "rightSide": false,
-        "show": true,
-        "total": false,
-        "values": true
-      },
-      "lines": true,
-      "linewidth": 1,
-      "links": [],
-      "maxPerRow": 3,
-      "nullPointMode": "null",
-      "options": {
-        "dataLinks": []
-      },
-      "percentage": false,
-      "pointradius": 5,
-      "points": false,
-      "renderer": "flot",
-      "repeat": null,
-      "repeatIteration": 1579944022352,
-      "repeatPanelId": 3,
-      "scopedVars": {
-        "jvm_memory_pool_heap": {
-          "selected": false,
-          "text": "Survivor Space",
-          "value": "Survivor Space"
-        }
-      },
-      "seriesOverrides": [],
-      "spaceLength": 10,
-      "stack": false,
-      "steppedLine": false,
-      "targets": [
-        {
-          "expr": "jvm_memory_used_bytes{application=\"$application\", id=\"$jvm_memory_pool_heap\"}",
-          "format": "time_series",
-          "hide": false,
-          "interval": "",
-          "intervalFactor": 2,
-          "legendFormat": "used",
-          "metric": "",
-          "refId": "A",
-          "step": 1800
-        },
-        {
-          "expr": "jvm_memory_committed_bytes{application=\"$application\", id=\"$jvm_memory_pool_heap\"}",
-          "format": "time_series",
-          "hide": false,
-          "interval": "",
-          "intervalFactor": 2,
-          "legendFormat": "commited",
-          "metric": "",
-          "refId": "B",
-          "step": 1800
-        },
-        {
-          "expr": "jvm_memory_max_bytes{application=\"$application\", id=\"$jvm_memory_pool_heap\"}",
-          "format": "time_series",
-          "hide": false,
-          "interval": "",
-          "intervalFactor": 2,
-          "legendFormat": "max",
-          "metric": "",
-          "refId": "C",
-          "step": 1800
-        }
-      ],
-      "thresholds": [],
-      "timeFrom": null,
-      "timeRegions": [],
-      "timeShift": null,
-      "title": "$jvm_memory_pool_heap",
-      "tooltip": {
-        "msResolution": false,
-        "shared": true,
-        "sort": 0,
-        "value_type": "cumulative"
-      },
-      "type": "graph",
-      "x-axis": true,
-      "xaxis": {
-        "buckets": null,
-        "mode": "time",
-        "name": null,
-        "show": true,
-        "values": []
-      },
-      "y-axis": true,
-      "y_formats": [
-        "mbytes",
-        "short"
-      ],
-      "yaxes": [
-        {
-          "format": "bytes",
-          "label": null,
-          "logBase": 1,
-          "max": null,
-          "min": 0,
-          "show": true
-        },
-        {
-          "format": "short",
-          "label": null,
-          "logBase": 1,
-          "max": null,
-          "min": null,
-          "show": true
-        }
-      ],
-      "yaxis": {
-        "align": false,
-        "alignLevel": null
-      }
-    },
-    {
-      "aliasColors": {},
-      "bars": false,
-      "dashLength": 10,
-      "dashes": false,
-      "datasource": "Prometheus",
-      "editable": true,
-      "error": false,
-      "fill": 1,
-      "fillGradient": 0,
-      "grid": {
-        "leftLogBase": 1,
-        "leftMax": null,
-        "leftMin": null,
-        "rightLogBase": 1,
-        "rightMax": null,
-        "rightMin": null
-      },
-      "gridPos": {
-        "h": 7,
-        "w": 8,
-        "x": 16,
-        "y": 36
-      },
-      "id": 135,
-      "legend": {
-        "alignAsTable": false,
-        "avg": false,
-        "current": true,
-        "max": true,
-        "min": false,
-        "rightSide": false,
-        "show": true,
-        "total": false,
-        "values": true
-      },
-      "lines": true,
-      "linewidth": 1,
-      "links": [],
-      "maxPerRow": 3,
-      "nullPointMode": "null",
-      "options": {
-        "dataLinks": []
-      },
-      "percentage": false,
-      "pointradius": 5,
-      "points": false,
-      "renderer": "flot",
-      "repeat": null,
-      "repeatIteration": 1579944022352,
-      "repeatPanelId": 3,
-      "scopedVars": {
-        "jvm_memory_pool_heap": {
-          "selected": false,
-          "text": "Tenured Gen",
-          "value": "Tenured Gen"
-        }
-      },
       "seriesOverrides": [],
       "spaceLength": 10,
       "stack": false,
@@ -2609,6 +2467,12 @@
       "datasource": "Prometheus",
       "editable": true,
       "error": false,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
       "fill": 1,
       "grid": {
         "leftLogBase": 1,
@@ -2641,583 +2505,12 @@
       "links": [],
       "maxPerRow": 3,
       "nullPointMode": "null",
-      "options": {},
       "percentage": false,
+      "pluginVersion": "7.2.0",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
       "repeat": "jvm_memory_pool_nonheap",
-      "scopedVars": {
-        "jvm_memory_pool_nonheap": {
-          "selected": false,
-          "text": "Metaspace",
-          "value": "Metaspace"
-        }
-      },
-      "seriesOverrides": [],
-      "spaceLength": 10,
-      "stack": false,
-      "steppedLine": false,
-      "targets": [
-        {
-          "expr": "jvm_memory_used_bytes{application=\"$application\", id=\"$jvm_memory_pool_nonheap\"}",
-          "format": "time_series",
-          "hide": false,
-          "interval": "",
-          "intervalFactor": 2,
-          "legendFormat": "used",
-          "metric": "",
-          "refId": "A",
-          "step": 1800
-        },
-        {
-          "expr": "jvm_memory_committed_bytes{application=\"$application\", id=\"$jvm_memory_pool_nonheap\"}",
-          "format": "time_series",
-          "hide": false,
-          "interval": "",
-          "intervalFactor": 2,
-          "legendFormat": "commited",
-          "metric": "",
-          "refId": "B",
-          "step": 1800
-        },
-        {
-          "expr": "jvm_memory_max_bytes{application=\"$application\", id=\"$jvm_memory_pool_nonheap\"}",
-          "format": "time_series",
-          "hide": false,
-          "interval": "",
-          "intervalFactor": 2,
-          "legendFormat": "max",
-          "metric": "",
-          "refId": "C",
-          "step": 1800
-        }
-      ],
-      "thresholds": [],
-      "timeFrom": null,
-      "timeShift": null,
-      "title": "$jvm_memory_pool_nonheap",
-      "tooltip": {
-        "msResolution": false,
-        "shared": true,
-        "sort": 0,
-        "value_type": "cumulative"
-      },
-      "type": "graph",
-      "x-axis": true,
-      "xaxis": {
-        "buckets": null,
-        "mode": "time",
-        "name": null,
-        "show": true,
-        "values": []
-      },
-      "y-axis": true,
-      "y_formats": [
-        "mbytes",
-        "short"
-      ],
-      "yaxes": [
-        {
-          "format": "bytes",
-          "label": null,
-          "logBase": 1,
-          "max": null,
-          "min": 0,
-          "show": true
-        },
-        {
-          "format": "short",
-          "label": null,
-          "logBase": 1,
-          "max": null,
-          "min": null,
-          "show": true
-        }
-      ],
-      "yaxis": {
-        "align": false,
-        "alignLevel": null
-      }
-    },
-    {
-      "aliasColors": {},
-      "bars": false,
-      "dashLength": 10,
-      "dashes": false,
-      "datasource": "Prometheus",
-      "editable": true,
-      "error": false,
-      "fill": 1,
-      "grid": {
-        "leftLogBase": 1,
-        "leftMax": null,
-        "leftMin": null,
-        "rightLogBase": 1,
-        "rightMax": null,
-        "rightMin": null
-      },
-      "gridPos": {
-        "h": 7,
-        "w": 8,
-        "x": 8,
-        "y": 44
-      },
-      "id": 136,
-      "legend": {
-        "alignAsTable": false,
-        "avg": false,
-        "current": true,
-        "max": true,
-        "min": false,
-        "rightSide": false,
-        "show": true,
-        "total": false,
-        "values": true
-      },
-      "lines": true,
-      "linewidth": 1,
-      "links": [],
-      "maxPerRow": 3,
-      "nullPointMode": "null",
-      "options": {},
-      "percentage": false,
-      "pointradius": 5,
-      "points": false,
-      "renderer": "flot",
-      "repeat": null,
-      "repeatIteration": 1579944022352,
-      "repeatPanelId": 78,
-      "scopedVars": {
-        "jvm_memory_pool_nonheap": {
-          "selected": false,
-          "text": "Compressed Class Space",
-          "value": "Compressed Class Space"
-        }
-      },
-      "seriesOverrides": [],
-      "spaceLength": 10,
-      "stack": false,
-      "steppedLine": false,
-      "targets": [
-        {
-          "expr": "jvm_memory_used_bytes{application=\"$application\", id=\"$jvm_memory_pool_nonheap\"}",
-          "format": "time_series",
-          "hide": false,
-          "interval": "",
-          "intervalFactor": 2,
-          "legendFormat": "used",
-          "metric": "",
-          "refId": "A",
-          "step": 1800
-        },
-        {
-          "expr": "jvm_memory_committed_bytes{application=\"$application\", id=\"$jvm_memory_pool_nonheap\"}",
-          "format": "time_series",
-          "hide": false,
-          "interval": "",
-          "intervalFactor": 2,
-          "legendFormat": "commited",
-          "metric": "",
-          "refId": "B",
-          "step": 1800
-        },
-        {
-          "expr": "jvm_memory_max_bytes{application=\"$application\", id=\"$jvm_memory_pool_nonheap\"}",
-          "format": "time_series",
-          "hide": false,
-          "interval": "",
-          "intervalFactor": 2,
-          "legendFormat": "max",
-          "metric": "",
-          "refId": "C",
-          "step": 1800
-        }
-      ],
-      "thresholds": [],
-      "timeFrom": null,
-      "timeShift": null,
-      "title": "$jvm_memory_pool_nonheap",
-      "tooltip": {
-        "msResolution": false,
-        "shared": true,
-        "sort": 0,
-        "value_type": "cumulative"
-      },
-      "type": "graph",
-      "x-axis": true,
-      "xaxis": {
-        "buckets": null,
-        "mode": "time",
-        "name": null,
-        "show": true,
-        "values": []
-      },
-      "y-axis": true,
-      "y_formats": [
-        "mbytes",
-        "short"
-      ],
-      "yaxes": [
-        {
-          "format": "bytes",
-          "label": null,
-          "logBase": 1,
-          "max": null,
-          "min": 0,
-          "show": true
-        },
-        {
-          "format": "short",
-          "label": null,
-          "logBase": 1,
-          "max": null,
-          "min": null,
-          "show": true
-        }
-      ],
-      "yaxis": {
-        "align": false,
-        "alignLevel": null
-      }
-    },
-    {
-      "aliasColors": {},
-      "bars": false,
-      "dashLength": 10,
-      "dashes": false,
-      "datasource": "Prometheus",
-      "editable": true,
-      "error": false,
-      "fill": 1,
-      "grid": {
-        "leftLogBase": 1,
-        "leftMax": null,
-        "leftMin": null,
-        "rightLogBase": 1,
-        "rightMax": null,
-        "rightMin": null
-      },
-      "gridPos": {
-        "h": 7,
-        "w": 8,
-        "x": 16,
-        "y": 44
-      },
-      "id": 137,
-      "legend": {
-        "alignAsTable": false,
-        "avg": false,
-        "current": true,
-        "max": true,
-        "min": false,
-        "rightSide": false,
-        "show": true,
-        "total": false,
-        "values": true
-      },
-      "lines": true,
-      "linewidth": 1,
-      "links": [],
-      "maxPerRow": 3,
-      "nullPointMode": "null",
-      "options": {},
-      "percentage": false,
-      "pointradius": 5,
-      "points": false,
-      "renderer": "flot",
-      "repeat": null,
-      "repeatIteration": 1579944022352,
-      "repeatPanelId": 78,
-      "scopedVars": {
-        "jvm_memory_pool_nonheap": {
-          "selected": false,
-          "text": "CodeHeap 'profiled nmethods'",
-          "value": "CodeHeap 'profiled nmethods'"
-        }
-      },
-      "seriesOverrides": [],
-      "spaceLength": 10,
-      "stack": false,
-      "steppedLine": false,
-      "targets": [
-        {
-          "expr": "jvm_memory_used_bytes{application=\"$application\", id=\"$jvm_memory_pool_nonheap\"}",
-          "format": "time_series",
-          "hide": false,
-          "interval": "",
-          "intervalFactor": 2,
-          "legendFormat": "used",
-          "metric": "",
-          "refId": "A",
-          "step": 1800
-        },
-        {
-          "expr": "jvm_memory_committed_bytes{application=\"$application\", id=\"$jvm_memory_pool_nonheap\"}",
-          "format": "time_series",
-          "hide": false,
-          "interval": "",
-          "intervalFactor": 2,
-          "legendFormat": "commited",
-          "metric": "",
-          "refId": "B",
-          "step": 1800
-        },
-        {
-          "expr": "jvm_memory_max_bytes{application=\"$application\", id=\"$jvm_memory_pool_nonheap\"}",
-          "format": "time_series",
-          "hide": false,
-          "interval": "",
-          "intervalFactor": 2,
-          "legendFormat": "max",
-          "metric": "",
-          "refId": "C",
-          "step": 1800
-        }
-      ],
-      "thresholds": [],
-      "timeFrom": null,
-      "timeShift": null,
-      "title": "$jvm_memory_pool_nonheap",
-      "tooltip": {
-        "msResolution": false,
-        "shared": true,
-        "sort": 0,
-        "value_type": "cumulative"
-      },
-      "type": "graph",
-      "x-axis": true,
-      "xaxis": {
-        "buckets": null,
-        "mode": "time",
-        "name": null,
-        "show": true,
-        "values": []
-      },
-      "y-axis": true,
-      "y_formats": [
-        "mbytes",
-        "short"
-      ],
-      "yaxes": [
-        {
-          "format": "bytes",
-          "label": null,
-          "logBase": 1,
-          "max": null,
-          "min": 0,
-          "show": true
-        },
-        {
-          "format": "short",
-          "label": null,
-          "logBase": 1,
-          "max": null,
-          "min": null,
-          "show": true
-        }
-      ],
-      "yaxis": {
-        "align": false,
-        "alignLevel": null
-      }
-    },
-    {
-      "aliasColors": {},
-      "bars": false,
-      "dashLength": 10,
-      "dashes": false,
-      "datasource": "Prometheus",
-      "editable": true,
-      "error": false,
-      "fill": 1,
-      "grid": {
-        "leftLogBase": 1,
-        "leftMax": null,
-        "leftMin": null,
-        "rightLogBase": 1,
-        "rightMax": null,
-        "rightMin": null
-      },
-      "gridPos": {
-        "h": 7,
-        "w": 8,
-        "x": 0,
-        "y": 51
-      },
-      "id": 138,
-      "legend": {
-        "alignAsTable": false,
-        "avg": false,
-        "current": true,
-        "max": true,
-        "min": false,
-        "rightSide": false,
-        "show": true,
-        "total": false,
-        "values": true
-      },
-      "lines": true,
-      "linewidth": 1,
-      "links": [],
-      "maxPerRow": 3,
-      "nullPointMode": "null",
-      "options": {},
-      "percentage": false,
-      "pointradius": 5,
-      "points": false,
-      "renderer": "flot",
-      "repeat": null,
-      "repeatIteration": 1579944022352,
-      "repeatPanelId": 78,
-      "scopedVars": {
-        "jvm_memory_pool_nonheap": {
-          "selected": false,
-          "text": "CodeHeap 'non-profiled nmethods'",
-          "value": "CodeHeap 'non-profiled nmethods'"
-        }
-      },
-      "seriesOverrides": [],
-      "spaceLength": 10,
-      "stack": false,
-      "steppedLine": false,
-      "targets": [
-        {
-          "expr": "jvm_memory_used_bytes{application=\"$application\", id=\"$jvm_memory_pool_nonheap\"}",
-          "format": "time_series",
-          "hide": false,
-          "interval": "",
-          "intervalFactor": 2,
-          "legendFormat": "used",
-          "metric": "",
-          "refId": "A",
-          "step": 1800
-        },
-        {
-          "expr": "jvm_memory_committed_bytes{application=\"$application\", id=\"$jvm_memory_pool_nonheap\"}",
-          "format": "time_series",
-          "hide": false,
-          "interval": "",
-          "intervalFactor": 2,
-          "legendFormat": "commited",
-          "metric": "",
-          "refId": "B",
-          "step": 1800
-        },
-        {
-          "expr": "jvm_memory_max_bytes{application=\"$application\", id=\"$jvm_memory_pool_nonheap\"}",
-          "format": "time_series",
-          "hide": false,
-          "interval": "",
-          "intervalFactor": 2,
-          "legendFormat": "max",
-          "metric": "",
-          "refId": "C",
-          "step": 1800
-        }
-      ],
-      "thresholds": [],
-      "timeFrom": null,
-      "timeShift": null,
-      "title": "$jvm_memory_pool_nonheap",
-      "tooltip": {
-        "msResolution": false,
-        "shared": true,
-        "sort": 0,
-        "value_type": "cumulative"
-      },
-      "type": "graph",
-      "x-axis": true,
-      "xaxis": {
-        "buckets": null,
-        "mode": "time",
-        "name": null,
-        "show": true,
-        "values": []
-      },
-      "y-axis": true,
-      "y_formats": [
-        "mbytes",
-        "short"
-      ],
-      "yaxes": [
-        {
-          "format": "bytes",
-          "label": null,
-          "logBase": 1,
-          "max": null,
-          "min": 0,
-          "show": true
-        },
-        {
-          "format": "short",
-          "label": null,
-          "logBase": 1,
-          "max": null,
-          "min": null,
-          "show": true
-        }
-      ],
-      "yaxis": {
-        "align": false,
-        "alignLevel": null
-      }
-    },
-    {
-      "aliasColors": {},
-      "bars": false,
-      "dashLength": 10,
-      "dashes": false,
-      "datasource": "Prometheus",
-      "editable": true,
-      "error": false,
-      "fill": 1,
-      "grid": {
-        "leftLogBase": 1,
-        "leftMax": null,
-        "leftMin": null,
-        "rightLogBase": 1,
-        "rightMax": null,
-        "rightMin": null
-      },
-      "gridPos": {
-        "h": 7,
-        "w": 8,
-        "x": 8,
-        "y": 51
-      },
-      "id": 139,
-      "legend": {
-        "alignAsTable": false,
-        "avg": false,
-        "current": true,
-        "max": true,
-        "min": false,
-        "rightSide": false,
-        "show": true,
-        "total": false,
-        "values": true
-      },
-      "lines": true,
-      "linewidth": 1,
-      "links": [],
-      "maxPerRow": 3,
-      "nullPointMode": "null",
-      "options": {},
-      "percentage": false,
-      "pointradius": 5,
-      "points": false,
-      "renderer": "flot",
-      "repeat": null,
-      "repeatIteration": 1579944022352,
-      "repeatPanelId": 78,
-      "scopedVars": {
-        "jvm_memory_pool_nonheap": {
-          "selected": false,
-          "text": "CodeHeap 'non-nmethods'",
-          "value": "CodeHeap 'non-nmethods'"
-        }
-      },
       "seriesOverrides": [],
       "spaceLength": 10,
       "stack": false,
@@ -3311,7 +2604,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 58
+        "y": 51
       },
       "id": 131,
       "panels": [],
@@ -3325,12 +2618,18 @@
       "dashLength": 10,
       "dashes": false,
       "datasource": "Prometheus",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
       "fill": 1,
       "gridPos": {
         "h": 7,
         "w": 8,
         "x": 0,
-        "y": 59
+        "y": 52
       },
       "id": 98,
       "legend": {
@@ -3346,8 +2645,8 @@
       "linewidth": 1,
       "links": [],
       "nullPointMode": "null",
-      "options": {},
       "percentage": false,
+      "pluginVersion": "7.2.0",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -3411,12 +2710,18 @@
       "dashLength": 10,
       "dashes": false,
       "datasource": "Prometheus",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
       "fill": 1,
       "gridPos": {
         "h": 7,
         "w": 8,
         "x": 8,
-        "y": 59
+        "y": 52
       },
       "id": 101,
       "legend": {
@@ -3432,8 +2737,8 @@
       "linewidth": 1,
       "links": [],
       "nullPointMode": "null",
-      "options": {},
       "percentage": false,
+      "pluginVersion": "7.2.0",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -3507,12 +2812,18 @@
       "dashLength": 10,
       "dashes": false,
       "datasource": "Prometheus",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
       "fill": 1,
       "gridPos": {
         "h": 7,
         "w": 8,
         "x": 16,
-        "y": 59
+        "y": 52
       },
       "id": 99,
       "legend": {
@@ -3528,8 +2839,8 @@
       "linewidth": 1,
       "links": [],
       "nullPointMode": "null",
-      "options": {},
       "percentage": false,
+      "pluginVersion": "7.2.0",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -3602,7 +2913,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 66
+        "y": 59
       },
       "id": 132,
       "panels": [],
@@ -3618,6 +2929,12 @@
       "datasource": "Prometheus",
       "editable": true,
       "error": false,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
       "fill": 1,
       "grid": {
         "leftLogBase": 1,
@@ -3631,7 +2948,7 @@
         "h": 7,
         "w": 12,
         "x": 0,
-        "y": 67
+        "y": 60
       },
       "id": 37,
       "legend": {
@@ -3647,8 +2964,8 @@
       "linewidth": 1,
       "links": [],
       "nullPointMode": "null",
-      "options": {},
       "percentage": false,
+      "pluginVersion": "7.2.0",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -3722,6 +3039,12 @@
       "datasource": "Prometheus",
       "editable": true,
       "error": false,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
       "fill": 1,
       "grid": {
         "leftLogBase": 1,
@@ -3735,7 +3058,7 @@
         "h": 7,
         "w": 12,
         "x": 12,
-        "y": 67
+        "y": 60
       },
       "id": 38,
       "legend": {
@@ -3751,8 +3074,8 @@
       "linewidth": 1,
       "links": [],
       "nullPointMode": "null",
-      "options": {},
       "percentage": false,
+      "pluginVersion": "7.2.0",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -3828,7 +3151,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 74
+        "y": 67
       },
       "id": 133,
       "panels": [],
@@ -3844,6 +3167,12 @@
       "datasource": "Prometheus",
       "editable": true,
       "error": false,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
       "fill": 1,
       "grid": {
         "leftLogBase": 1,
@@ -3857,7 +3186,7 @@
         "h": 7,
         "w": 6,
         "x": 0,
-        "y": 75
+        "y": 68
       },
       "id": 33,
       "legend": {
@@ -3873,8 +3202,8 @@
       "linewidth": 1,
       "links": [],
       "nullPointMode": "null",
-      "options": {},
       "percentage": false,
+      "pluginVersion": "7.2.0",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -3957,6 +3286,12 @@
       "datasource": "Prometheus",
       "editable": true,
       "error": false,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
       "fill": 1,
       "grid": {
         "leftLogBase": 1,
@@ -3970,7 +3305,7 @@
         "h": 7,
         "w": 6,
         "x": 6,
-        "y": 75
+        "y": 68
       },
       "id": 83,
       "legend": {
@@ -3986,8 +3321,8 @@
       "linewidth": 1,
       "links": [],
       "nullPointMode": "null",
-      "options": {},
       "percentage": false,
+      "pluginVersion": "7.2.0",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -4062,6 +3397,12 @@
       "datasource": "Prometheus",
       "editable": true,
       "error": false,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
       "fill": 1,
       "grid": {
         "leftLogBase": 1,
@@ -4075,7 +3416,7 @@
         "h": 7,
         "w": 6,
         "x": 12,
-        "y": 75
+        "y": 68
       },
       "id": 85,
       "legend": {
@@ -4091,8 +3432,8 @@
       "linewidth": 1,
       "links": [],
       "nullPointMode": "null",
-      "options": {},
       "percentage": false,
+      "pluginVersion": "7.2.0",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -4175,6 +3516,12 @@
       "datasource": "Prometheus",
       "editable": true,
       "error": false,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
       "fill": 1,
       "grid": {
         "leftLogBase": 1,
@@ -4188,7 +3535,7 @@
         "h": 7,
         "w": 6,
         "x": 18,
-        "y": 75
+        "y": 68
       },
       "id": 84,
       "legend": {
@@ -4204,8 +3551,8 @@
       "linewidth": 1,
       "links": [],
       "nullPointMode": "null",
-      "options": {},
       "percentage": false,
+      "pluginVersion": "7.2.0",
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
@@ -4274,7 +3621,7 @@
     }
   ],
   "refresh": "5s",
-  "schemaVersion": 20,
+  "schemaVersion": 26,
   "style": "dark",
   "tags": [],
   "templating": {
@@ -4283,6 +3630,7 @@
         "allFormat": "glob",
         "allValue": null,
         "current": {
+          "selected": false,
           "text": "All",
           "value": "$__all"
         },
@@ -4310,6 +3658,7 @@
         "allFormat": "glob",
         "allValue": null,
         "current": {
+          "selected": false,
           "text": "All",
           "value": "$__all"
         },
@@ -4336,9 +3685,9 @@
       {
         "allValue": null,
         "current": {
-          "tags": [],
-          "text": "cache-tags-manager",
-          "value": "cache-tags-manager"
+          "selected": false,
+          "text": "mn-lettuce-tester",
+          "value": "mn-lettuce-tester"
         },
         "datasource": "Prometheus",
         "definition": "label_values(application)",
@@ -4349,19 +3698,34 @@
         "name": "application",
         "options": [
           {
-            "selected": false,
-            "text": "cache-movies-manager",
-            "value": "cache-movies-manager"
-          },
-          {
             "selected": true,
-            "text": "cache-tags-manager",
-            "value": "cache-tags-manager"
+            "text": "mn-lettuce-tester",
+            "value": "mn-lettuce-tester"
           },
           {
             "selected": false,
-            "text": "movies-manager",
-            "value": "movies-manager"
+            "text": "mn-redisson-tester",
+            "value": "mn-redisson-tester"
+          },
+          {
+            "selected": false,
+            "text": "quarkus-lettuce-tester",
+            "value": "quarkus-lettuce-tester"
+          },
+          {
+            "selected": false,
+            "text": "quarkus-redisson-tester",
+            "value": "quarkus-redisson-tester"
+          },
+          {
+            "selected": false,
+            "text": "webflux-lettuce-tester",
+            "value": "webflux-lettuce-tester"
+          },
+          {
+            "selected": false,
+            "text": "webflux-redisson-tester",
+            "value": "webflux-redisson-tester"
           }
         ],
         "query": "label_values(application)",

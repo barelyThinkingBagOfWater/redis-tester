@@ -312,6 +312,65 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "get metrics prometheus",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:30080/actuator/prometheus",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30080",
+					"path": [
+						"actuator",
+						"prometheus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get metrics micronaut prometheus",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:30080/prometheus",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30080",
+					"path": [
+						"prometheus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get metrics quarkus prometheus",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:30080/q/metrics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30080",
+					"path": [
+						"q",
+						"metrics"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

@@ -1,0 +1,119 @@
+mn-lettuce
+
+================================================================================
+---- Global Information --------------------------------------------------------
+> request count                                     700000 (OK=700000 KO=0     )
+> min response time                                    541 (OK=541    KO=-     )
+> max response time                                  49725 (OK=49725  KO=-     )
+> mean response time                                 22456 (OK=22456  KO=-     )
+> std deviation                                      11343 (OK=11343  KO=-     )
+> response time 50th percentile                      22518 (OK=22526  KO=-     )
+> response time 75th percentile                      31297 (OK=31290  KO=-     )
+> response time 95th percentile                      41804 (OK=41805  KO=-     )
+> response time 99th percentile                      45474 (OK=45474  KO=-     )
+> mean requests/sec                                6796.117 (OK=6796.117 KO=-     )
+---- Response Time Distribution ------------------------------------------------
+> t < 800 ms                                            36 (  0%)
+> 800 ms < t < 1200 ms                                 165 (  0%)
+> t > 1200 ms                                       699799 (100%)
+> failed                                                 0 (  0%)
+================================================================================
+
+
+mn-redisson
+
+================================================================================
+---- Global Information --------------------------------------------------------
+> request count                                     700000 (OK=700000 KO=0     )
+> min response time                                    917 (OK=917    KO=-     )
+> max response time                                  47603 (OK=47603  KO=-     )
+> mean response time                                 18725 (OK=18725  KO=-     )
+> std deviation                                       9544 (OK=9544   KO=-     )
+> response time 50th percentile                      16920 (OK=16919  KO=-     )
+> response time 75th percentile                      24791 (OK=24799  KO=-     )
+> response time 95th percentile                      36661 (OK=36661  KO=-     )
+> response time 99th percentile                      41596 (OK=41587  KO=-     )
+> mean requests/sec                                6730.769 (OK=6730.769 KO=-     )
+---- Response Time Distribution ------------------------------------------------
+> t < 800 ms                                             0 (  0%)
+> 800 ms < t < 1200 ms                                   6 (  0%)
+> t > 1200 ms                                       699994 (100%)
+> failed                                                 0 (  0%)
+================================================================================
+
+
+quarkus-lettuce
+
+================================================================================
+---- Global Information --------------------------------------------------------
+> request count                                     700000 (OK=700000 KO=0     )
+> min response time                                    750 (OK=750    KO=-     )
+> max response time                                  31842 (OK=31842  KO=-     )
+> mean response time                                 12510 (OK=12510  KO=-     )
+> std deviation                                       6215 (OK=6215   KO=-     )
+> response time 50th percentile                      11989 (OK=11985  KO=-     )
+> response time 75th percentile                      17261 (OK=17258  KO=-     )
+> response time 95th percentile                      22929 (OK=22920  KO=-     )
+> response time 99th percentile                      27085 (OK=27085  KO=-     )
+> mean requests/sec                                8536.585 (OK=8536.585 KO=-     )
+---- Response Time Distribution ------------------------------------------------
+> t < 800 ms                                             1 (  0%)
+> 800 ms < t < 1200 ms                                 930 (  0%)
+> t > 1200 ms                                       699069 (100%)
+> failed                                                 0 (  0%)
+================================================================================
+
+
+
+Quarkus-redisson
+
+================================================================================
+---- Global Information --------------------------------------------------------
+> request count                                     700000 (OK=699999 KO=1     )
+> min response time                                   4118 (OK=4118   KO=4638  )
+> max response time                                  51787 (OK=51787  KO=4638  )
+> mean response time                                 20793 (OK=20793  KO=4638  )
+> std deviation                                       9135 (OK=9135   KO=0     )
+> response time 50th percentile                      20852 (OK=20808  KO=4638  )
+> response time 75th percentile                      27502 (OK=27498  KO=4638  )
+> response time 95th percentile                      36294 (OK=36307  KO=4638  )
+> response time 99th percentile                      41186 (OK=41186  KO=4638  )
+> mean requests/sec                                6796.117 (OK=6796.107 KO=0.01  )
+---- Response Time Distribution ------------------------------------------------
+> t < 800 ms                                             0 (  0%)
+> 800 ms < t < 1200 ms                                   0 (  0%)
+> t > 1200 ms                                       699999 (100%)
+> failed                                                 1 (  0%)
+---- Errors --------------------------------------------------------------------
+> status.find.in(200,201,202,203,204,205,206,207,208,209,304), f      1 (100.0%)
+ound 500
+================================================================================
+
+
+Webflux-lettuce
+
+================================================================================
+---- Global Information --------------------------------------------------------
+> request count                                     700000 (OK=699524 KO=476   )
+> min response time                                    529 (OK=529    KO=20786 )
+> max response time                                  48794 (OK=48794  KO=31623 )
+> mean response time                                 19162 (OK=19155  KO=29710 )
+> std deviation                                       8641 (OK=8639   KO=3049  )
+> response time 50th percentile                      20127 (OK=20138  KO=31113 )
+> response time 75th percentile                      25413 (OK=25398  KO=31188 )
+> response time 95th percentile                      33062 (OK=33073  KO=31611 )
+> response time 99th percentile                      36837 (OK=36835  KO=31623 )
+> mean requests/sec                                6930.693 (OK=6925.98 KO=4.713 )
+---- Response Time Distribution ------------------------------------------------
+> t < 800 ms                                            93 (  0%)
+> 800 ms < t < 1200 ms                                 163 (  0%)
+> t > 1200 ms                                       699268 (100%)
+> failed                                               476 (  0%)
+---- Errors --------------------------------------------------------------------
+> i.n.c.ConnectTimeoutException: connection timed out: localhost    476 (100.0%)
+/127.0.0.1:30080
+================================================================================
+
+
+
+

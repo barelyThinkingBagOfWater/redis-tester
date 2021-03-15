@@ -1,4 +1,3 @@
-import TestRequests._
 import com.google.gson.Gson
 import entities.ItinerariesGenerator
 import io.gatling.core.Predef._
@@ -17,6 +16,7 @@ class Scenarios extends Simulation {
   val httpProtocol: HttpProtocolBuilder = http
     .baseUrl("http://localhost:30080")
     .contentTypeHeader("application/json")
+
 
 
   def generateRandomItineraries(): String = {
@@ -167,7 +167,7 @@ class Scenarios extends Simulation {
 
 
 //    .inject(atOnceUsers(2))
-    .inject(rampUsers(1000000) during (30 second))
+    .inject(rampUsers(700000) during (30 second))
 //    .inject(rampUsers(100000) during (30 second))
 //    .inject(rampUsers(1000) during (30 second))
 //    .inject(rampUsers(2))
