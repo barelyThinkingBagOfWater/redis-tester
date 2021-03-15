@@ -1,0 +1,1 @@
+yes | sudo kubeadm reset && cd .. && ./start_k8_cluster.sh && cd redis && ./start.sh && cd ../prometheus && ./start.sh && cd ../grafana && ./start.sh && cd ../tester && kubectl create -f config.yml && kubectl create -f service.yml && watch -n 2 kubectl get pods

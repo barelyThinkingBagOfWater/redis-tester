@@ -1,0 +1,24 @@
+Webflux-redisson-tester
+
+================================================================================
+---- Global Information --------------------------------------------------------
+> request count                                     700000 (OK=698226 KO=1774  )
+> min response time                                    188 (OK=188    KO=15805 )
+> max response time                                  42648 (OK=42506  KO=42648 )
+> mean response time                                 17104 (OK=17091  KO=22171 )
+> std deviation                                       7096 (OK=7090   KO=7582  )
+> response time 50th percentile                      17325 (OK=17298  KO=18474 )
+> response time 75th percentile                      22352 (OK=22308  KO=21916 )
+> response time 95th percentile                      28844 (OK=28828  KO=38586 )
+> response time 99th percentile                      32106 (OK=31958  KO=42638 )
+> mean requests/sec                                7368.421 (OK=7349.747 KO=18.674)
+---- Response Time Distribution ------------------------------------------------
+> t < 800 ms                                           572 (  0%)
+> 800 ms < t < 1200 ms                                 605 (  0%)
+> t > 1200 ms                                       697049 (100%)
+> failed                                              1774 (  0%)
+---- Errors --------------------------------------------------------------------
+> i.n.c.ConnectTimeoutException: connection timed out: localhost   1774 (100.0%)
+/127.0.0.1:30080
+================================================================================
+

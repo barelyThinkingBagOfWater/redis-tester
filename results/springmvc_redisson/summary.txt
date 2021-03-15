@@ -1,0 +1,26 @@
+Springmvc-redisson-tester
+
+
+---- Global Information --------------------------------------------------------
+> request count                                     700000 (OK=694820 KO=5180  )
+> min response time                                     94 (OK=94     KO=14275 )
+> max response time                                  75901 (OK=75901  KO=75872 )
+> mean response time                                 32079 (OK=31985  KO=44624 )
+> std deviation                                      14948 (OK=14894  KO=16839 )
+> response time 50th percentile                      32908 (OK=32869  KO=47941 )
+> response time 75th percentile                      43240 (OK=43116  KO=60000 )
+> response time 95th percentile                      55999 (OK=55888  KO=60040 )
+> response time 99th percentile                      62558 (OK=62478  KO=75007 )
+> mean requests/sec                                4697.987 (OK=4663.221 KO=34.765)
+---- Response Time Distribution ------------------------------------------------
+> t < 800 ms                                          1409 (  0%)
+> 800 ms < t < 1200 ms                                1095 (  0%)
+> t > 1200 ms                                       692316 ( 99%)
+> failed                                              5180 (  1%)
+---- Errors --------------------------------------------------------------------
+> i.n.c.ConnectTimeoutException: connection timed out: localhost   3629 (70.06%)
+/127.0.0.1:30080
+> i.g.h.c.i.RequestTimeoutException: Request timeout after 60000   1252 (24.17%)
+ ms
+> j.i.IOException: Premature close                                  299 ( 5.77%)
+================================================================================

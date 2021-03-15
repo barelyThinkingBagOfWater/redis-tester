@@ -1,3 +1,6 @@
+NOT LINKED TO THE RESULTS IN EACH FOLDER (BUT SAME TESTS), USE IT AS A COMPARISON
+
+
 mn-lettuce
 
 ================================================================================
@@ -64,6 +67,25 @@ quarkus-lettuce
 ================================================================================
 
 
+================================================================================
+---- Global Information --------------------------------------------------------
+> request count                                     700000 (OK=700000 KO=0     )
+> min response time                                     26 (OK=26     KO=-     )
+> max response time                                  34482 (OK=34482  KO=-     )
+> mean response time                                 13934 (OK=13934  KO=-     )
+> std deviation                                       6411 (OK=6411   KO=-     )
+> response time 50th percentile                      15044 (OK=15042  KO=-     )
+> response time 75th percentile                      18953 (OK=18954  KO=-     )
+> response time 95th percentile                      23291 (OK=23292  KO=-     )
+> response time 99th percentile                      25671 (OK=25672  KO=-     )
+> mean requests/sec                                7865.169 (OK=7865.169 KO=-     )
+---- Response Time Distribution ------------------------------------------------
+> t < 800 ms                                          2204 (  0%)
+> 800 ms < t < 1200 ms                                3439 (  0%)
+> t > 1200 ms                                       694357 ( 99%)
+> failed                                                 0 (  0%)
+================================================================================
+
 
 Quarkus-redisson
 
@@ -90,30 +112,113 @@ ound 500
 ================================================================================
 
 
-Webflux-lettuce
+Webflux-lettuce-tester
 
-================================================================================
 ---- Global Information --------------------------------------------------------
-> request count                                     700000 (OK=699524 KO=476   )
-> min response time                                    529 (OK=529    KO=20786 )
-> max response time                                  48794 (OK=48794  KO=31623 )
-> mean response time                                 19162 (OK=19155  KO=29710 )
-> std deviation                                       8641 (OK=8639   KO=3049  )
-> response time 50th percentile                      20127 (OK=20138  KO=31113 )
-> response time 75th percentile                      25413 (OK=25398  KO=31188 )
-> response time 95th percentile                      33062 (OK=33073  KO=31611 )
-> response time 99th percentile                      36837 (OK=36835  KO=31623 )
-> mean requests/sec                                6930.693 (OK=6925.98 KO=4.713 )
+> request count                                     700000 (OK=699764 KO=236   )
+> min response time                                    812 (OK=812    KO=32354 )
+> max response time                                  34411 (OK=34411  KO=32396 )
+> mean response time                                 14820 (OK=14814  KO=32382 )
+> std deviation                                       6177 (OK=6169   KO=11    )
+> response time 50th percentile                      15522 (OK=15525  KO=32384 )
+> response time 75th percentile                      19862 (OK=19861  KO=32391 )
+> response time 95th percentile                      23856 (OK=23850  KO=32396 )
+> response time 99th percentile                      26927 (OK=26893  KO=32396 )
+> mean requests/sec                                7777.778 (OK=7775.156 KO=2.622 )
 ---- Response Time Distribution ------------------------------------------------
-> t < 800 ms                                            93 (  0%)
-> 800 ms < t < 1200 ms                                 163 (  0%)
-> t > 1200 ms                                       699268 (100%)
-> failed                                               476 (  0%)
+> t < 800 ms                                             0 (  0%)
+> 800 ms < t < 1200 ms                                   9 (  0%)
+> t > 1200 ms                                       699755 (100%)
+> failed                                               236 (  0%)
 ---- Errors --------------------------------------------------------------------
-> i.n.c.ConnectTimeoutException: connection timed out: localhost    476 (100.0%)
+> i.n.c.ConnectTimeoutException: connection timed out: localhost    236 (100.0%)
 /127.0.0.1:30080
 ================================================================================
 
 
+
+Webflux-redisson
+
+================================================================================
+---- Global Information --------------------------------------------------------
+> request count                                     700000 (OK=699394 KO=606   )
+> min response time                                    220 (OK=220    KO=14195 )
+> max response time                                  37474 (OK=37474  KO=22084 )
+> mean response time                                 16270 (OK=16270  KO=16300 )
+> std deviation                                       6807 (OK=6809   KO=2930  )
+> response time 50th percentile                      16206 (OK=16204  KO=14297 )
+> response time 75th percentile                      20851 (OK=20886  KO=20162 )
+> response time 95th percentile                      27866 (OK=27858  KO=20998 )
+> response time 99th percentile                      32892 (OK=32887  KO=22079 )
+> mean requests/sec                                7526.882 (OK=7520.366 KO=6.516 )
+---- Response Time Distribution ------------------------------------------------
+> t < 800 ms                                           441 (  0%)
+> 800 ms < t < 1200 ms                                 857 (  0%)
+> t > 1200 ms                                       698096 (100%)
+> failed                                               606 (  0%)
+---- Errors --------------------------------------------------------------------
+> i.n.c.ConnectTimeoutException: connection timed out: localhost    606 (100.0%)
+/127.0.0.1:30080
+================================================================================
+
+
+Springmvc-lettuce
+
+================================================================================
+---- Global Information --------------------------------------------------------
+> request count                                     700000 (OK=688562 KO=11438 )
+> min response time                                    263 (OK=263    KO=17701 )
+> max response time                                 108314 (OK=95540  KO=108314)
+> mean response time                                 33464 (OK=33063  KO=57633 )
+> std deviation                                      16682 (OK=16383  KO=16751 )
+> response time 50th percentile                      35012 (OK=34733  KO=60000 )
+> response time 75th percentile                      45884 (OK=45574  KO=67234 )
+> response time 95th percentile                      58847 (OK=57977  KO=85840 )
+> response time 99th percentile                      70952 (OK=67825  KO=105750)
+> mean requests/sec                                4430.38 (OK=4357.987 KO=72.392)
+---- Response Time Distribution ------------------------------------------------
+> t < 800 ms                                          1218 (  0%)
+> 800 ms < t < 1200 ms                                2590 (  0%)
+> t > 1200 ms                                       684754 ( 98%)
+> failed                                             11438 (  2%)
+---- Errors --------------------------------------------------------------------
+> i.n.c.ConnectTimeoutException: connection timed out: localhost   4447 (38.88%)
+/127.0.0.1:30080
+> j.i.IOException: Premature close                                 4097 (35.82%)
+> i.g.h.c.i.RequestTimeoutException: Request timeout after 60000   2593 (22.67%)
+ ms
+> i.g.h.c.i.RequestTimeoutException: Request timeout to localhos    301 ( 2.63%)
+t/127.0.0.1:30080 after 60000 ms
+================================================================================
+
+
+
+Springmvc-redisson
+
+================================================================================
+---- Global Information --------------------------------------------------------
+> request count                                     700000 (OK=696875 KO=3125  )
+> min response time                                     86 (OK=86     KO=15752 )
+> max response time                                 104010 (OK=77640  KO=104010)
+> mean response time                                 30407 (OK=30327  KO=48339 )
+> std deviation                                      13766 (OK=13713  KO=13868 )
+> response time 50th percentile                      33194 (OK=33148  KO=49969 )
+> response time 75th percentile                      40943 (OK=40885  KO=55661 )
+> response time 95th percentile                      49769 (OK=49519  KO=60555 )
+> response time 99th percentile                      56575 (OK=56305  KO=69904 )
+> mean requests/sec                                4605.263 (OK=4584.704 KO=20.559)
+---- Response Time Distribution ------------------------------------------------
+> t < 800 ms                                          2146 (  0%)
+> 800 ms < t < 1200 ms                                1343 (  0%)
+> t > 1200 ms                                       693386 ( 99%)
+> failed                                              3125 (  0%)
+---- Errors --------------------------------------------------------------------
+> i.n.c.ConnectTimeoutException: connection timed out: localhost   2748 (87.94%)
+/127.0.0.1:30080
+> i.g.h.c.i.RequestTimeoutException: Request timeout after 60000    352 (11.26%)
+ ms
+> i.g.h.c.i.RequestTimeoutException: Request timeout to localhos     25 ( 0.80%)
+t/127.0.0.1:30080 after 60000 ms
+================================================================================
 
 

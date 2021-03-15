@@ -1,0 +1,22 @@
+Webflux-lettuce-tester
+
+---- Global Information --------------------------------------------------------
+> request count                                     700000 (OK=699764 KO=236   )
+> min response time                                    812 (OK=812    KO=32354 )
+> max response time                                  34411 (OK=34411  KO=32396 )
+> mean response time                                 14820 (OK=14814  KO=32382 )
+> std deviation                                       6177 (OK=6169   KO=11    )
+> response time 50th percentile                      15522 (OK=15525  KO=32384 )
+> response time 75th percentile                      19862 (OK=19861  KO=32391 )
+> response time 95th percentile                      23856 (OK=23850  KO=32396 )
+> response time 99th percentile                      26927 (OK=26893  KO=32396 )
+> mean requests/sec                                7777.778 (OK=7775.156 KO=2.622 )
+---- Response Time Distribution ------------------------------------------------
+> t < 800 ms                                             0 (  0%)
+> 800 ms < t < 1200 ms                                   9 (  0%)
+> t > 1200 ms                                       699755 (100%)
+> failed                                               236 (  0%)
+---- Errors --------------------------------------------------------------------
+> i.n.c.ConnectTimeoutException: connection timed out: localhost    236 (100.0%)
+/127.0.0.1:30080
+================================================================================

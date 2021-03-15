@@ -1,0 +1,10 @@
+{
+  "simulation": "Scenarios",
+  "simulationId": "scenarios",
+  "start": 1615785671639,
+  "description": "Fake description to avoid the prompt each time",
+  "scenarios": ["Saving one itinerary"],
+  "assertions": [
+
+  ]
+}

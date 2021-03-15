@@ -3772,7 +3772,7 @@
     ]
   },
   "timezone": "browser",
-  "title": "Metrics for Spring boot applications",
+  "title": "Metrics for applications using Micrometer",
   "uid": "JrQc1xsmk",
   "version": 1
 }

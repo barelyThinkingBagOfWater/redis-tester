@@ -1,0 +1,22 @@
+Mn-lettuce-tester
+
+
+================================================================================
+---- Global Information --------------------------------------------------------
+> request count                                     700000 (OK=700000 KO=0     )
+> min response time                                    802 (OK=802    KO=-     )
+> max response time                                  35245 (OK=35245  KO=-     )
+> mean response time                                 13474 (OK=13474  KO=-     )
+> std deviation                                       6143 (OK=6143   KO=-     )
+> response time 50th percentile                      13148 (OK=13173  KO=-     )
+> response time 75th percentile                      17273 (OK=17274  KO=-     )
+> response time 95th percentile                      25083 (OK=25085  KO=-     )
+> response time 99th percentile                      28038 (OK=28040  KO=-     )
+> mean requests/sec                                8641.975 (OK=8641.975 KO=-     )
+---- Response Time Distribution ------------------------------------------------
+> t < 800 ms                                             0 (  0%)
+> 800 ms < t < 1200 ms                                  67 (  0%)
+> t > 1200 ms                                       699933 (100%)
+> failed                                                 0 (  0%)
+================================================================================
+

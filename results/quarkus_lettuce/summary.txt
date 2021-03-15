@@ -1,0 +1,20 @@
+Quarkus-lettuce-tester
+
+================================================================================
+---- Global Information --------------------------------------------------------
+> request count                                     700000 (OK=700000 KO=0     )
+> min response time                                   1430 (OK=1430   KO=-     )
+> max response time                                  33417 (OK=33417  KO=-     )
+> mean response time                                 12319 (OK=12319  KO=-     )
+> std deviation                                       5261 (OK=5261   KO=-     )
+> response time 50th percentile                      12766 (OK=12768  KO=-     )
+> response time 75th percentile                      16279 (OK=16284  KO=-     )
+> response time 95th percentile                      20853 (OK=20848  KO=-     )
+> response time 99th percentile                      23656 (OK=23656  KO=-     )
+> mean requests/sec                                   8750 (OK=8750   KO=-     )
+---- Response Time Distribution ------------------------------------------------
+> t < 800 ms                                             0 (  0%)
+> 800 ms < t < 1200 ms                                   0 (  0%)
+> t > 1200 ms                                       700000 (100%)
+> failed                                                 0 (  0%)
+================================================================================

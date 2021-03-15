@@ -1,0 +1,21 @@
+Quarkus-redisson-tester
+
+================================================================================
+---- Global Information --------------------------------------------------------
+> request count                                     700000 (OK=700000 KO=0     )
+> min response time                                   1226 (OK=1226   KO=-     )
+> max response time                                  41276 (OK=41276  KO=-     )
+> mean response time                                 17075 (OK=17075  KO=-     )
+> std deviation                                       8086 (OK=8086   KO=-     )
+> response time 50th percentile                      15694 (OK=15691  KO=-     )
+> response time 75th percentile                      23097 (OK=23083  KO=-     )
+> response time 95th percentile                      32674 (OK=32660  KO=-     )
+> response time 99th percentile                      35864 (OK=35864  KO=-     )
+> mean requests/sec                                7368.421 (OK=7368.421 KO=-     )
+---- Response Time Distribution ------------------------------------------------
+> t < 800 ms                                             0 (  0%)
+> 800 ms < t < 1200 ms                                   0 (  0%)
+> t > 1200 ms                                       700000 (100%)
+> failed                                                 0 (  0%)
+================================================================================
+

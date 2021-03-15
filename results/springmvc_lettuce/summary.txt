@@ -1,0 +1,28 @@
+Springmvc-lettuce-tester
+
+================================================================================
+---- Global Information --------------------------------------------------------
+> request count                                     700000 (OK=687589 KO=12411 )
+> min response time                                    304 (OK=304    KO=17937 )
+> max response time                                  76098 (OK=75639  KO=76098 )
+> mean response time                                 30813 (OK=30299  KO=59294 )
+> std deviation                                      16566 (OK=16182  KO=12039 )
+> response time 50th percentile                      29228 (OK=28841  KO=61117 )
+> response time 75th percentile                      44015 (OK=43350  KO=65958 )
+> response time 95th percentile                      58971 (OK=57067  KO=75204 )
+> response time 99th percentile                      69270 (OK=67918  KO=76094 )
+> mean requests/sec                                5185.185 (OK=5093.252 KO=91.933)
+---- Response Time Distribution ------------------------------------------------
+> t < 800 ms                                           427 (  0%)
+> 800 ms < t < 1200 ms                                 923 (  0%)
+> t > 1200 ms                                       686239 ( 98%)
+> failed                                             12411 (  2%)
+---- Errors --------------------------------------------------------------------
+> i.g.h.c.i.RequestTimeoutException: Request timeout after 60000   7747 (62.42%)
+ ms
+> i.n.c.ConnectTimeoutException: connection timed out: localhost   3480 (28.04%)
+/127.0.0.1:30080
+> i.g.h.c.i.RequestTimeoutException: Request timeout to localhos   1184 ( 9.54%)
+t/127.0.0.1:30080 after 60000 ms
+================================================================================
+

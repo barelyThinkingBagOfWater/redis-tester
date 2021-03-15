@@ -1,0 +1,25 @@
+Mn-redisson-tester
+
+---- Global Information --------------------------------------------------------
+> request count                                     700000 (OK=700000 KO=0     )
+> min response time                                    721 (OK=721    KO=-     )
+> max response time                                  48401 (OK=48401  KO=-     )
+> mean response time                                 18457 (OK=18457  KO=-     )
+> std deviation                                       9235 (OK=9235   KO=-     )
+> response time 50th percentile                      16232 (OK=16238  KO=-     )
+> response time 75th percentile                      25974 (OK=25969  KO=-     )
+> response time 95th percentile                      34608 (OK=34610  KO=-     )
+> response time 99th percentile                      40780 (OK=40777  KO=-     )
+> mean requests/sec                                7291.667 (OK=7291.667 KO=-     )
+---- Response Time Distribution ------------------------------------------------
+> t < 800 ms                                             9 (  0%)
+> 800 ms < t < 1200 ms                                 112 (  0%)
+> t > 1200 ms                                       699879 (100%)
+> failed                                                 0 (  0%)
+================================================================================
+
+Reports generated in 0s.
+Please open the following file: /home/xavier/workspace/fahrad/load-tester/target/gatling/scenarios-20210315051236732/index.html
+
+Process finished with exit code 0
+
