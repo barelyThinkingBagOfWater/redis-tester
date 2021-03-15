@@ -1,4 +1,4 @@
-Default conf with native image, not convincing at all
+Default conf with native image, not convincing at all. Notice the min response time and quick response though.
 
 1st try
 ---- Global Information --------------------------------------------------------
@@ -23,7 +23,7 @@ Default conf with native image, not convincing at all
 ================================================================================
 
 
-2nd try
+2nd try.
 
 ---- Global Information --------------------------------------------------------
 > request count                                     700000 (OK=699626 KO=374   )
