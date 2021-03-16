@@ -1,7 +1,7 @@
 Tests done using Gatling framework, scenario : https://github.com/barelyThinkingBagOfWater/redis-tester/blob/master/load-tester/src/test/scala/Scenarios.scala
 700'000k requests ramped during 30 seconds to save 1 big Json object in DB. 
 
-Summary of the results :
+Summary of the results (check this file as a raw file to get a clear view):
 
 ARTIFACTS                Avg requests/sec    % failed requests  Min response time  Max response time  Avg response timeStd deviation  Response time 50%  Response time 75%   Response time 95%   Response time 99%
 Springmvc-redisson                   4697            1% (5180)                 94              75901              32079        14948              32908              43240               55999               62558
